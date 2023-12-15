@@ -94,10 +94,9 @@
 + java: 这个也不可能没有吧
 + lua: packer插件必备
 ```
-
-此外你的终端环境需要有 fzf、ag、rg 等插件，最好配上 tmux
-因为年代有点久了，心血来潮就这么发上来了，有一些命令可能没有
-没有的话就要慢慢调试了
+    此外你的终端环境需要有 `fzf`、`ag`、`rg` 等插件，最好配上 `tmux`
+    因为年代有点久了，心血来潮就这么发上来了，有一些命令可能没有
+    没有的话你就要慢慢调试了[摊手]
 
 ## 目录结构
 ```
@@ -288,10 +287,10 @@
 | `SPACE` `i` `t` | 开启 Markdown 的 Table Mode  |
 
 ## 一些好用的插件
-以下只给核心功能绑定按键 其他功能可自行查看 `init-keybidings` 文件
-Git方面建议使用内部终端打开 lazygit, 这里给出以前的git按键供参考
-`Startify` 入口名字是我 `hanwenhao` 你得改成你自己 或者删掉
-位置在 `init/init-better-defaults.vim` 下的 `let g:startify_custom_header`
+    以下只给核心功能绑定按键 其他功能可自行查看 `init-keybidings` 文件
+    Git方面建议使用内部终端打开 lazygit, 这里给出以前的git按键供参考
+    `Startify` 入口名字是我 `hanwenhao` 你得改成你自己 或者删掉
+    位置在 `init/init-better-defaults.vim` 下的 `let g:startify_custom_header`
 
 | 快捷键      | 行为                                                                             |
 |-------------|----------------------------------------------------------------------------------|
