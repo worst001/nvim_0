@@ -1,4 +1,15 @@
-# 自用 nvim 配置
+<!-- PROJECT SHIELDS -->
+
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+<!-- [![LinkedIn][linkedin-shield]][linkedin-url] -->
+
+<!-- PROJECT LOGO -->
+
+# 完整的 nvim 配置
 
 <!-- TOC -->
 * [基本信息](#基本信息)
@@ -34,16 +45,7 @@
 
 主要使用COC实现代码补全，配置了NeoVim所需要基本功能，为了层次清晰定义了一些结构。
 
-<!-- PROJECT SHIELDS -->
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-<!-- [![LinkedIn][linkedin-shield]][linkedin-url] -->
-
-<!-- PROJECT LOGO -->
+涵盖所有主流编辑功能，部署完后只要环境允许可以开发各类语言
 
 #### 初始化的时候分了5个模块在init，分别为
 + `init-packages.vim`: Plug插件包配置
