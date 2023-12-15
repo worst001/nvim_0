@@ -151,47 +151,47 @@
 #### 环境设置
 | 快捷键    | 行为                |
 |-----------|---------------------|
-| F2        | 进入主配置文件      |
-| SPACE F1  | 查看命令历史        |
-| SPACE F2  | Plug插件设置        |
-| SPACE F3  | Packer(Lua)插件设置 |
-| space s x | 配置文件立即生效    |
+| `F2`        | 进入主配置文件      |
+| `SPACE` `F1`  | 查看命令历史        |
+| `SPACE` `F2`  | Plug插件设置        |
+| `SPACE` `F3`  | Packer(Lua)插件设置 |
+| `SPACE` `s` `x` | 配置文件立即生效    |
 
 ## 基础按键
 | 快捷键                    | 行为              |
 |---------------------------|-------------------|
-| j k                       | 右手 ESC          |
-| Shift + k (Shift + Up)    | 大范围上移动      |
-| Shift + j (Shift + Down)  | 大范围下移动      |
-| Shift + l (Shift + Right) | 大范围右移动      |
-| Shift + h (Shift + Left)  | 大范围左移动      |
-| - -                       | 替换原有的 J Join |
-| u l                       | 当前单词小写      |
-| u p                       | 当前单词大写      |
-| SPACE d s                 | 删除swap缓存      |
-| SPACE y                   | 粘贴板历史        |
+| `j` `k`                       | 右手 ESC          |
+| `Shift` + `k` (`Shift` + `Up`)    | 大范围上移动      |
+| `Shift` + `j` (`Shift` + `Down`)  | 大范围下移动      |
+| `Shift` + `l` (`Shift` + `Right`) | 大范围右移动      |
+| `Shift` + `h` (`Shift` + `Left`)  | 大范围左移动      |
+| `-` `-`                       | 替换原有的 J Join |
+| `u` `l`                       | 当前单词小写      |
+| `u` `p`                       | 当前单词大写      |
+| `SPACE` `d` `s`                 | 删除swap缓存      |
+| `SPACE` `y`                   | 粘贴板历史        |
 
 #### 窗口按键
 | 快捷键                 | 行为                  |
 |------------------------|-----------------------|
-| Alt w                  | 关闭当前窗口          |
-| Shift + q              | 关闭所有窗口(退出Vim) |
-| (Ctrl + v) (Ctrl + v)  | 垂直分屏              |
-| (Ctrl + s) (Ctrl + s)  | 水平分屏              |
-| (Ctrl + s) (Ctrl + v)  | 水平切换到垂直        |
-| (Ctrl + v) (Ctrl + s)  | 垂直切换到水平        |
-| Alt k/j/l/h            | 切换窗口              |
-| Alt Up/Down/Left/Right | 改变窗口大小          |
+| `Alt` `w`                  | 关闭当前窗口          |
+| `Shift` + `q`              | 关闭所有窗口(退出Vim) |
+| (`Ctrl` + `v`) (`Ctrl` + `v`)  | 垂直分屏              |
+| (`Ctrl` + `s`) (`Ctrl` + `s`)  | 水平分屏              |
+| (`Ctrl` + `s`) (`Ctrl` + `v`)  | 水平切换到垂直        |
+| (`Ctrl` + `v`) (`Ctrl` + `s`)  | 垂直切换到水平        |
+| `Alt` `k`/`j`/`l`/`h`            | 切换窗口              |
+| `Alt` `Up`/`Down`/`Left`/`Right` | 改变窗口大小          |
 
 #### 标签按键
 | 快捷键      | 行为                                         |
 |-------------|----------------------------------------------|
-| t 1/2.../9  | 切换到标签1 (1-9)                            |
-| Alt + ]     | 切换到下一个标签                             |
-| Alt + [     | 切换到上一个标签                             |
-| Tab         | 切换到下一个buffer(buffer就是已打开的编辑区) |
-| Shift + Tab | 切换到上一个buffer                           |
-| Space Tab   | 删除当前buffer                               |
+| `t` `1`/`2`.../`9`  | 切换到标签1 (1-9)                            |
+| `Alt` + `]`     | 切换到下一个标签                             |
+| `Alt` + `[`     | 切换到上一个标签                             |
+| `Tab`         | 切换到下一个buffer(buffer就是已打开的编辑区) |
+| `Shift` + `Tab` | 切换到上一个buffer                           |
+| `Space` `Tab`   | 删除当前buffer                               |
 
 #### 快速进入区域内部
     配合 AutoPairs 可以对各种块添加删除括号 这里给出老方案做参考
@@ -199,14 +199,14 @@
 
 | 快捷键             | 行为                                                            |
 |--------------------|-----------------------------------------------------------------|
-| <operator> i (     | 进入()内部执行<operator>, op 表示基本操作符 下同                |
-| <operator> i [     | 进入[]内部执行<operator>, 比如 di[ 就会清除[]内部               |
-| <operator> i <     | 进入<>内部执行<operator>                                        |
-| <operator> i {     | 进入{}内部执行<operator>                                        |
-| <operator> i '     | 进入''内部执行<operator>                                        |
-| <operator> i "     | 进入""内部执行<operator>                                        |
-| <operator> i \`    | 进入\`\`内部执行<operator>  这里\是转义字符`防止和Markdown冲突` |
-| <visual> Shift + s | 使用 AutoPairs 对<visual>块添加某种括号                         |
+| <operator> `i` `(`     | 进入()内部执行<operator>, op 表示基本操作符 下同                |
+| <operator> `i` `[`     | 进入[]内部执行<operator>, 比如 di[ 就会清除[]内部               |
+| <operator> `i` `<`     | 进入<>内部执行<operator>                                        |
+| <operator> `i` `{`     | 进入{}内部执行<operator>                                        |
+| <operator> `i` `'`     | 进入''内部执行<operator>                                        |
+| <operator> `i` `"`     | 进入""内部执行<operator>                                        |
+| <operator> `i` \`    | 进入\`\`内部执行<operator>  这里\是转义字符`防止和Markdown冲突` |
+| <visual> `Shift` + `s` | 使用 AutoPairs 对<visual>块添加某种括号                         |
 
 
 #### 内部终端
@@ -216,72 +216,72 @@
 
 | 快捷键  | 行为                                            |
 |---------|-------------------------------------------------|
-| Alt + 0 | 开启/关闭 内部终端                              |
-| Alt + n | 打开新的 终端 标签                              |
-| Alt + = | 下一个终端标签                                  |
-| Alt + - | 上一个终端标签                                  |
-| Alt + x | 关闭终端标签                                    |
-| <Esc> d | 查看文件大小(其实就是 du -sh * \| sort -rh<cr>) |
+| `Alt` + `0` | 开启/关闭 内部终端                              |
+| `Alt` + `n` | 打开新的 终端 标签                              |
+| `Alt` + `=` | 下一个终端标签                                  |
+| `Alt` + `-` | 上一个终端标签                                  |
+| `Alt` + `x` | 关闭终端标签                                    |
+| `Esc` `d` | 查看文件大小(其实就是 du -sh * \| sort -rh<cr>) |
 
 #### 界面展示设置
 | 快捷键    | 行为               |
 |-----------|--------------------|
-| SPACE l i | 开启/关闭 查询高亮 |
-| SPACE l m | 开启/关闭 竖行     |
-| SPACE l w | 开启/关闭 行包裹   |
-| SPACE l n | 开启/关闭 行号     |
-| SPACE l s | 开启/关闭 对齐线   |
-| SPACE l y | 开启/关闭 Zen 模式 |
-| SPACE l p | 开启/关闭 拼写检查 |
+| `SPACE` `l` `i` | 开启/关闭 查询高亮 |
+| `SPACE` `l` `m` | 开启/关闭 竖行     |
+| `SPACE` `l` `w` | 开启/关闭 行包裹   |
+| `SPACE` `l` `n` | 开启/关闭 行号     |
+| `SPACE` `l` `s` | 开启/关闭 对齐线   |
+| `SPACE` `l` `y` | 开启/关闭 Zen 模式 |
+| `SPACE` `l` `p` | 开启/关闭 拼写检查 |
 
 #### 索引与查询
 
 ##### grep
 | 快捷键    | 行为                     |
 |-----------|--------------------------|
-| SPACE /   | 当前buffer关键字查询     |
-| SPACE / . | 所有buffer关键字查询     |
-| SPACE / / | 所有buffer关键字查询     |
-| SPACE / g | 当前目录下递归查询关键字 |
+| `SPACE` `/`   | 当前buffer关键字查询     |
+| `SPACE` `/` `.` | 所有buffer关键字查询     |
+| `SPACE` `/` `/` | 所有buffer关键字查询     |
+| `SPACE` `/` `g` | 当前目录下递归查询关键字 |
 
 ##### file&buffer
 | 快捷键    | 行为                            |
 |-----------|---------------------------------|
-| Alt /     | 唤醒 telescope 自定义查询       |
-| Alt f     | 查询当前目录下的文件            |
-| SPACE f b | 查询buffer                      |
-| SPACE f w | 查询window                      |
-| SPACE f f | 以当前buffer的git根目录进行查询 |
-| SPACE f s | 查看最近的session |
-| SPACE f k | 查询快捷键  |
+| `Alt` `/`     | 唤醒 telescope 自定义查询       |
+| `Alt` `f`     | 查询当前目录下的文件            |
+| `SPACE` `f` `b` | 查询buffer                      |
+| `SPACE` `f` `w` | 查询window                      |
+| `SPACE` `f` `f` | 以当前buffer的git根目录进行查询 |
+| `SPACE` `f` `s` | 查看最近的session |
+| `SPACE` `f` `k` | 查询快捷键  |
 
 ##### command
 | 快捷键    | 行为        |
 |-----------|-------------|
-| SPACE j h | Vim命令历史 |
-| SPACE j j | 查看coc命令 |
-| SPACE j s | 清除多余空格|
+| `SPACE` `j` `h` | Vim命令历史 |
+| `SPACE` `j` `j` | 查看coc命令 |
+| `SPACE` `j` `s` | 清除多余空格|
 
 ##### history
 | 快捷键    | 行为                                |
 |-----------|-------------------------------------|
-| SPACE h h | 查询buffer打开历史                  |
-| SPACE h s | 查询`查询`历史                      |
-| SPACE h m | 查询痕迹历史(就是编辑时留下的痕迹) |
+| `SPACE` `h` `h` | 查询buffer打开历史                  |
+| `SPACE` `h` `s` | 查询`查询`历史                      |
+| `SPACE` `h` `m` | 查询痕迹历史(就是编辑时留下的痕迹) |
 
 #### 功能窗口
 | 快捷键   | 行为                          |
 |----------|-------------------------------|
-| Alt + \` | 文件浏览窗口                  |
-| Alt + u  | 修改痕迹历史(退出Vim后会消失) |
-| Alt + 1  | 数据库窗口                    |
-| Alt + t  | 文件内部导航(函数导航)        |
+| `Alt` + \` | 文件浏览窗口                  |
+| `Alt` + `u`  | 修改痕迹历史(退出Vim后会消失) |
+| `Alt` + `1`  | 数据库窗口                    |
+| `Alt` + `t`  | 文件内部导航(函数导航)        |
 
 #### 编辑模式
 | 快捷键    | 行为                         |
 |-----------|------------------------------|
-| SPACE i s | 开启当前 buffer 的 snip 定义 |
-| SPACE i t | 开启 Markdown 的 Table Mode  |
+| `SPACE` `i` `s` | 开启当前 buffer 的 snip 定义 |
+| `SPACE` `i` `t` | 开启 Markdown 的 Table Mode  |
 
 ## 一些好用的插件
 以下只给核心功能绑定按键 其他功能可自行查看 `init-keybidings` 文件
@@ -291,19 +291,19 @@ Git方面建议使用内部终端打开 lazygit, 这里给出以前的git按键�
 
 | 快捷键      | 行为                                                                             |
 |-------------|----------------------------------------------------------------------------------|
-| s t t       | 入口面板 Startify                                                                |
-| g s         | 切换状态 Switch                                                                  |
-| SPACE ;     | 列对齐 Tabular                                                                   |
-| SPACE g c a | Git 提交 vim-fugitive                                                            |
-| Ctrl + h    | 开启关键字批量选择 Multiple Cursor                                               |
-| m t         | 对某一行打上标签 vim-bookmarks , = 下一标签, - 上一标签                          |
+| `s` `t` `t`       | 入口面板 Startify                                                                |
+| `g` `s`         | 切换状态 Switch                                                                  |
+| `SPACE` `;`     | 列对齐 Tabular                                                                   |
+| `SPACE` `g` `c` `a` | Git 提交 vim-fugitive                                                            |
+| `Ctrl` + `h`    | 开启关键字批量选择 Multiple Cursor                                               |
+| `m` `t`         | 对某一行打上标签 vim-bookmarks , = 下一标签, - 上一标签                          |
 
 #### 一些好用的自定义功能
 | 快捷键    | 行为                                                                             |
 |-----------|----------------------------------------------------------------------------------|
-| SPACE x y | 简单运行当前 buffer (主流语言基本上都支持 没有的话改下 `plugin/program-run.vim`) |
-| j j       | 下一个锚点 <++> 就是锚点 你也可以写成 <+锚点+>                                   |
-| k k       | 上一个锚点                                                                       |
+| `SPACE` `x` `y` | 简单运行当前 buffer (主流语言基本上都支持 没有的话改下 `plugin/program-run.vim`) |
+| `j` `j`       | 下一个锚点 <++> 就是锚点 你也可以写成 <+锚点+>                                   |
+| `k` `k`       | 上一个锚点                                                                       |
 
 #### 主题与外观
 主题与ui参数在 `init/init-ui.vim` 下, 可根据喜好设置
