@@ -1,0 +1,19 @@
+{
+    "trailingComma": "es5",
+    "semi": false,
+    "singleQuote": true,
+    "overrides": [
+        {
+            "files": ["*.html",  "*.vue" ],
+            "options": {
+                "tabWidth": 2
+            }
+        },
+        {
+            "files": ["*.js", "*.json"],
+            "options": {
+                "tabWidth": 4
+            }
+        }
+    ]
+}

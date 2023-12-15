@@ -1,0 +1,3 @@
+let l:bm_file_version = 1
+let l:bm_sessions = {'default': {'/Users/hanwenhao/.vim/init/init-keybindings.vim': [{'sign_idx': 9500, 'line_nr': 86, 'content': ':nnoremap <leader>aa   :<c-u>normal!   @a<cr>'},],}}
+let l:bm_current_session = 'default'

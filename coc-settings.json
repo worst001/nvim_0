@@ -1,0 +1,106 @@
+{
+    "yank.enableCompletion": true,
+    "diagnostic.virtualText": true,
+    "codeLens.enable": true,
+    "suggest.detailMaxLength": 60,
+    "texlab.path": "/usr/local/bin/texlab",
+    // "latex.lint.onChange": true,
+    // "latex.lint.onSave": true,
+    "vetur.dev.vlsPath": "/usr/local/lib/node_modules/vls",
+    "vetur.format.enable": true,
+    "explorer.file.reveal.whenOpen": true,
+    "explorer.icon.enableNerdfont": true,
+    "explorer.file.hiddenRules": {
+        "extensions": ["o", "a", "obj", "pyc", "class"],
+        "filenames": [],
+        "patternMatches": ["^\\."]
+    },
+    "explorer.keyMappings.global": {
+        "l": ["expandable?", ["expanded?", "collapse", "expand"], "open"],
+        "o": "gotoParent",
+        "i": ["expandable?", "cd", "open"],
+        "v": "open:vsplit",
+        "J": "normal:10j",
+        "K": "normal:10k",
+        "L": ["toggleSelection", "nodeNext"],
+        "H": ["toggleSelection", "nodePrev"]
+    },
+    "translator.engines": [
+        "bing",
+        // "google",
+        "youdao",
+        "haici"
+    ],
+    "browser.patterns": {"*": []},
+    "browser.shortcut": "WEB",
+    "browser.priority": 5,
+    "browser.port": 8888,
+    "coc-actions.showActionKind": true,
+    "coc.preferences.snippetStatusText": "Ⓢ ",
+    "suggest.completionItemKindLabels": {
+        "class": "\uf0e8",
+        "color": "\ue22b",
+        "constant": "\uf8fe",
+        "default": "\uf29c",
+        "enum": "\uf435",
+        "enumMember": "\uf02b",
+        "event": "\ufacd",
+        "field": "\uf93d",
+        "file": "\uf723",
+        "folder": "\uf115",
+        "function": "\u0192",
+        "interface": "\uf417",
+        "keyword": "\uf1de",
+        "method": "\uf6a6",
+        "module": "\uf40d",
+        "operator": "\uf915",
+        "property": "\ue624",
+        "reference": "\ufa46",
+        "snippet": "\ue60b",
+        "struct": "\ufb44",
+        "text": "\ue612",
+        "typeParameter": "\uf728",
+        "unit": "\uf475",
+        "value": "\uf89f",
+        "variable": "\ue71b"
+    },
+    "diagnostic.errorSign": "\uf467",
+    "diagnostic.warningSign": "\uf071",
+    "diagnostic.infoSign": "\uf129",
+    "diagnostic.hintSign": "\uf864",
+    "diagnostic.displayByAle": false,
+    "diagnostic.refreshOnInsertMode": false,
+    "diagnostic.checkCurrentLine": true,
+    "diagnostic.virtualTextPrefix": " ❯❯❯ ",
+    "java.configuration.maven.userSettings":"/Users/hanwenhao/.m2/settings.xml",
+    "java.import.maven.enabled":true,
+    "java.jdt.ls.lombokSupport.enabled":false,
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-1.8",
+            "path": "/Users/hanwenhao/Library/Java/JavaVirtualMachines/liberica-1.8.0_302",
+            "default": true
+        }
+    ],
+    "phpactor.enable": true,
+    "languageserver": {
+        "phpactor": {
+            "command": "phpactor",
+            "args": ["language-server"],
+            "trace.server": "verbose",
+            "filetypes": ["php"]
+        }
+    },
+    "clangd.path": "/Library/Developer/CommandLineTools/usr/bin/clangd",
+    "cSpell.userWords": [
+      "activiti",
+      "autohotkey",
+      "boogaloo",
+      "iapf",
+      "ideavim",
+      "toyman"
+    ],
+    "git.enableGutters": true,
+    "Lua.telemetry.enable": true,
+    "snippets.ultisnips.pythonPrompt": false
+}

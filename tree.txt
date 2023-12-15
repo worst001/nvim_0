@@ -1,0 +1,102 @@
+.
+├── README.md
+├── autoload
+│   ├── dbext.vim.bak
+│   ├── dbext_dbi.vim.bak
+│   ├── plug.vim
+│   └── plug.vim.old
+├── coc-settings.json
+├── init
+│   ├── config
+│   │   └── db.vim
+│   ├── init-assist.vim
+│   ├── init-better-defaults.vim
+│   ├── init-keybindings.vim
+│   ├── init-packages.vim
+│   ├── init-packer.vim
+│   ├── init-ui.vim
+│   └── new
+├── init.vim -> /Users/hanwenhao/.vim/vimrc
+├── lua
+│   ├── plugin-config
+│   │   ├── bufferline.lua
+│   │   ├── catppuccin.lua
+│   │   ├── lualine.lua
+│   │   ├── nvim-chatgpt.lua
+│   │   ├── nvim-tree.lua
+│   │   ├── nvim-treesitter.lua
+│   │   ├── persisted.lua
+│   │   ├── telescope.lua
+│   │   └── todo-comments.lua
+│   └── plugins.lua
+├── pack
+│   └── vimspector
+│       └── opt
+├── package-lock.json
+├── plugged
+├── plugin
+│   ├── code-exceed.vim
+│   ├── code-lazygit.vim
+│   ├── code-lint.vim
+│   ├── code-ui.vim
+│   ├── file-bulk.vim
+│   ├── file-convert.vim
+│   ├── file-cwd.vim
+│   ├── file-ranger.vim
+│   ├── fold-text.vim
+│   ├── fold-ui.vim
+│   ├── functional.vim
+│   ├── osx-openapp.vim
+│   ├── osx-opengame.vim
+│   ├── packer_compiled.lua
+│   ├── program-run.vim
+│   ├── tags-generate.vim
+│   ├── terminal-histroy.vim
+│   ├── terminal-open.vim
+│   ├── text-highlight.vim
+│   └── vimcdoc.vim
+├── sessions
+│   └── default.vim
+├── shell
+│   ├── prettier
+│   ├── scalafix
+│   │   ├── etc
+│   │   └── scalafmt
+│   ├── time
+│   │   └── convert
+│   ├── uncrustify
+│   │   ├── etc
+│   │   │   ├── MS-calling_conventions.cfg
+│   │   │   ├── amxmodx.cfg
+│   │   │   ├── ben.cfg
+│   │   │   ├── ben2.cfg
+│   │   │   ├── d.cfg
+│   │   │   ├── defaults.cfg
+│   │   │   ├── dofiles.sh
+│   │   │   ├── freebsd.cfg
+│   │   │   ├── gnu-indent.cfg
+│   │   │   ├── klaus.cfg
+│   │   │   ├── kr-indent.cfg
+│   │   │   ├── linux-indent.cfg
+│   │   │   ├── linux.cfg
+│   │   │   ├── mono.cfg
+│   │   │   ├── msvc.cfg
+│   │   │   ├── objc.cfg
+│   │   │   ├── sun.cfg
+│   │   │   ├── types.txt
+│   │   │   ├── uigui_uncrustify.ini
+│   │   │   ├── uncrust-files.sh
+│   │   │   ├── uncrustify.xml.in
+│   │   │   └── xsupplicant.cfg
+│   │   └── uncrustify
+│   ├── xml-prettier
+│   │   ├── xml-beautify
+│   │   └── xmlformat.jar
+│   └── xml2js
+│       └── index.js
+├── syntax
+│   └── help_cn.vim
+├── tree.txt
+└── vimrc
+
+21 directories, 78 files
