@@ -299,7 +299,7 @@
 | `g` `s`         | 切换状态 Switch                                                                  |
 | `SPACE` `;`     | 列对齐 Tabular                                                                   |
 | `SPACE` `g` `c` `a` | Git 提交 vim-fugitive                                                            |
-| `Ctrl` + `h`    | 开启关键字批量选择 Multiple Cursor                                               |
+| `Ctrl` + `h`    | 开启关键字批量选择 Multiple Cursor,  `n` 下一个匹配, `Q` 返回上一个匹配              |
 | `m` `t`         | 对某一行打上标签 vim-bookmarks , `=` 下一标签, `-` 上一标签                          |
 
 #### 一些好用的自定义功能
