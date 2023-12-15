@@ -300,7 +300,7 @@
 | `SPACE` `;`     | 列对齐 Tabular                                                                   |
 | `SPACE` `g` `c` `a` | Git 提交 vim-fugitive                                                            |
 | `Ctrl` + `h`    | 开启关键字批量选择 Multiple Cursor                                               |
-| `m` `t`         | 对某一行打上标签 vim-bookmarks , = 下一标签, - 上一标签                          |
+| `m` `t`         | 对某一行打上标签 vim-bookmarks , `=` 下一标签, `-` 上一标签                          |
 
 #### 一些好用的自定义功能
 | 快捷键    | 行为                                                                             |
