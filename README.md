@@ -47,6 +47,7 @@
 
 涵盖所有主流编辑功能，部署完后只要环境允许可以开发各类语言
 
+
 #### 初始化的时候分了5个模块在init，分别为
 + `init-packages.vim`: Plug插件包配置
 + `init-ui.vim`: 界面与主题相关配置
@@ -324,11 +325,17 @@ Git方面建议使用内部终端打开 lazygit, 这里给出以前的git按键�
 
 
 ## 写在最后
+
 暂时就写这么点，vim大佬有很多，有兴趣的可以看这个配置。:kissing_closed_eyes:
 
 #### 参考资料
 [https://github.com/theniceboy/nvim](https://github.com/theniceboy/nvim)
 
+#### 博客地址
+
+喜欢学习技术的小伙伴可以访问我的博客，主页地址请访问这里
+
+- 访问入口：[http://mkdocs.grft.top](http://mkdocs.grft.top)
 
 <!-- links -->
 [your-project-path]:shaojintian/Best_README_template
