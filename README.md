@@ -342,13 +342,13 @@ Git方面建议使用内部终端打开 lazygit, 这里给出以前的git按键�
 
 <!-- links -->
 [your-project-path]:shaojintian/Best_README_template
-[contributors-shield]: https://img.shields.io/github/contributors/worst001/vim_0.svg?style=flat-square
-[contributors-url]: https://github.com/worst001/vim_0/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/worst001/vim_0.svg?style=flat-square
-[forks-url]: https://github.com/worst001/vim_0/network/members
-[stars-shield]: https://img.shields.io/github/stars/worst001/vim_0.svg?style=flat-square
-[stars-url]: https://github.com/worst001/vim_0/stargazers
-[issues-shield]: https://img.shields.io/github/issues/worst001/vim_0.svg?style=flat-square
-[issues-url]: https://img.shields.io/github/issues/worst001/vim_0.svg
-[license-shield]: https://img.shields.io/github/license/worst001/vim_0.svg?style=flat-square
-[license-url]: https://github.com/worst001/vim_0/blob/main/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/worst001/nvim_0.svg?style=flat-square
+[contributors-url]: https://github.com/worst001/nvim_0/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/worst001/nvim_0.svg?style=flat-square
+[forks-url]: https://github.com/worst001/nvim_0/network/members
+[stars-shield]: https://img.shields.io/github/stars/worst001/nvim_0.svg?style=flat-square
+[stars-url]: https://github.com/worst001/nvim_0/stargazers
+[issues-shield]: https://img.shields.io/github/issues/worst001/nvim_0.svg?style=flat-square
+[issues-url]: https://img.shields.io/github/issues/worst001/nvim_0.svg
+[license-shield]: https://img.shields.io/github/license/worst001/nvim_0.svg?style=flat-square
+[license-url]: https://github.com/worst001/nvim_0/blob/main/LICENSE.txt
