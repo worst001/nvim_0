@@ -311,9 +311,8 @@
 
 #### 主题与外观
 
-主题与ui参数在 `init/init-ui.vim` 下, 可根据喜好设置
-
-为了好看我配合Iterm设置成了半透明 如果不需要可以注释 `augroup theme_customization_fix` 块
++ 主题与ui参数在 `init/init-ui.vim` 下, 可根据喜好设置
++ 为了好看我配合Iterm设置成了半透明 如果不需要可以注释 `augroup theme_customization_fix` 块
 
 #### Packer插件
 
