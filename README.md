@@ -326,6 +326,7 @@ Git方面建议使用内部终端打开 lazygit, 这里给出以前的git按键�
 ## 写在最后
 暂时就写这么点，vim大佬有很多，有兴趣的可以看这个配置。:kissing_closed_eyes:
 
+#### 参考资料
 [https://github.com/theniceboy/nvim](https://github.com/theniceboy/nvim)
 
 
