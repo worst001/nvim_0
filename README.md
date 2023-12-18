@@ -58,7 +58,7 @@
 + `init-keybindings.vim`: 按键绑定配置
 + `init-assist.vim`: 辅助功能配置
 
-#### 插件包分为Plug包|自定义包|Lua包
+#### 插件包分为Plug包%7C自定义包%7CLua包
 + plug包在`init-packages.vim`设置后默认生成在`plugged`目录
 + lua插件包相关配置解耦在`lua/plugin-config`
 + 自定义插件可以写在`plugin`目录
