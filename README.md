@@ -381,7 +381,6 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 ## 写在最后
 
 暂时就写这么点，`Vim` 大佬有很多，有兴趣的可以看这个配置, 我也是跟这个神仙学的: [https://github.com/theniceboy/nvim](https://github.com/theniceboy/nvim)
-
 `Neovim` 发展的很快，2022年年底左右 `lua plugin` 已经有人实现了自动化安装，不知不觉也已经有了 `go client` 了。随着社区的壮大，功能也在不断迭代，随着使用和学习的深入有更多的功能用法等你去发现、去实现
 
 
