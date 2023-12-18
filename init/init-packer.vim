@@ -1,4 +1,4 @@
-" 添加 packer 插件
+" 添加 packer 配置
 
 " 添加插件
 lua require('plugins')

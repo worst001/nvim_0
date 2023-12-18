@@ -30,7 +30,8 @@ Plug 'amix/open_file_under_cursor.vim'
 " Plug 'mg979/vim-xtabline'
 " Plug 'nvim-tree/nvim-web-devicons' " optional, for file icons
 " Plug 'nvim-tree/nvim-tree.lua'
-Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
+" Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
+" Plug 'akinsho/bufferline.nvim', { 'tag': '*' }
 
 
 " 代码导航

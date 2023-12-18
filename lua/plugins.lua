@@ -5,6 +5,15 @@ return require('packer').startup({
         use 'MunifTanjim/nui.nvim'
         use "nvim-lua/plenary.nvim"
 
+        use 'nvim-tree/nvim-web-devicons'
+
+        -- bufferline
+        use {
+            'akinsho/bufferline.nvim',
+            tag = "*",
+            requires = 'nvim-tree/nvim-web-devicons'
+        }
+
         -- telescope
         use {'nvim-telescope/telescope.nvim', tag = '0.1.5'}
 
