@@ -1,3 +1,3 @@
 let l:bm_file_version = 1
-let l:bm_sessions = {'default': {'/Users/hanwenhao/.vim/README.md': [{'sign_idx': 9501, 'line_nr': 63, 'content': '#### 插件包分为Plug包_自定义包_Lua包'},{'sign_idx': 9500, 'line_nr': 304, 'content': '#### file_buffer'},],}}
+let l:bm_sessions = {'default': {'/Users/hanwenhao/.vim/README.md': [{'sign_idx': 9501, 'line_nr': 63, 'content': '#### 插件包分为Plug包_自定义包_Lua包'},{'sign_idx': 9500, 'line_nr': 303, 'content': '#### file_buffer'},],}}
 let l:bm_current_session = 'default'
