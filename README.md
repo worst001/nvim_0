@@ -135,13 +135,13 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvi
 用的neovim在7.0以上，功能还是相对比较全的。所以在安装前先运行 `:checkhealth` 确保python、nodejs、ruby这些环境都在。
 理论上大部分程序环境你都需要装，比如
 
-+ ruby: 提供内置终端界面
-+ node: coc补全插件根本离不开它
-+ python: 一些插件比如ranger会用到, 还有强大的ultisnips
-+ clang: 不管是mac还是linux这个必备
-+ golang: 底层插件FZF就是用go写的，你说要不要
-+ java: 这个也不可能没有吧
-+ lua: packer插件必备
++ `ruby`: 提供内置终端界面
++ `node`: `coc`补全插件根本离不开它
++ `python`: 一些使用`python`的插件比如`ranger`, 还有强大的`Ultisnips`
++ `clang`: 不管是`Mac`还是`Linux`这个必备
++ `golang`: 底层插件`FZF`就是用`go`写的，你说要不要
++ `java`: 这个也不可能没有吧
++ `lua`: `packer`插件必备
 + 此外你的终端环境需要有
     + [fzf](https://github.com/junegunn/fzf)、
     + [ag](https://github.com/ggreer/the_silver_searcher)、
