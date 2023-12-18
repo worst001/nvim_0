@@ -355,24 +355,24 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 | `Ctrl` + `h`        | 开启关键字批量选择 [Multiple Cursor](https://github.com/mg979/vim-visual-multi),  `n` 下一个匹配, `Q` 返回上一个匹配 |
 | `m` `t`             | 对某一行打上标签 [vim-bookmarks](https://github.com/MattesGroeger/vim-bookmarks) , `=` 下一标签, `-` 上一标签        |
 
-### 一些好用的自定义功能
+#### 一些好用的自定义功能
 | 快捷键          | 行为                                                                             |
 |-----------------|----------------------------------------------------------------------------------|
 | `SPACE` `x` `y` | 简单运行当前 buffer (主流语言基本上都支持 没有的话改下 `plugin/program-run.vim`) |
 | `j` `j`         | 下一个锚点 <++> 就是锚点 你也可以写成 <+锚点+>                                   |
 | `k` `k`         | 上一个锚点                                                                       |
 
-### 主题与外观
+#### 主题与外观
 
 + 主题与ui参数在 `init/init-ui.vim` 下, 可根据喜好设置
 + 为了好看我配合Iterm设置成了半透明 如果不需要可以注释 `augroup theme_customization_fix` 块
 
-### Packer插件
+#### Packer插件
 
 + 其他`Packer`插件配置都在`lua/plugin-config`下，因为`neovim`本身一直在不断更新，
 + 如果找到更好的`Packer`插件，注释掉原有的，新的配置放`lua/plugin-config`下即可
 
-### 自定义插件与调试
+#### 自定义插件与调试
 
 + 自定义插件`plugin`需要调用的脚本时统一放在`shell`目录, 有兴趣的小伙伴可以实现更为复杂的功能, 特别优秀的话就打包开源发布吧
 + `VimSpector` 很久没用了，因为目前我调试时用的是 `Intellij` 全家桶, 如果需要可以查看[VimSpector](https://github.com/puremourning/vimspector)，快捷键保证不和 `F2` `F3` 冲突即可
