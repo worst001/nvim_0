@@ -58,7 +58,7 @@
 + `init-keybindings.vim`: 按键绑定配置
 + `init-assist.vim`: 辅助功能配置
 
-#### [](#plugin-manager)插件包分为Plug包、自定义包、Lua包
+#### [](#plugin_manager)插件包分为Plug包、自定义包、Lua包
 + plug包在`init-packages.vim`设置后默认生成在`plugged`目录
 + lua插件包相关配置解耦在`lua/plugin-config`
 + 自定义插件可以写在`plugin`目录
@@ -299,7 +299,7 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 | `SPACE` `/` `/` | 所有buffer关键字查询     |
 | `SPACE` `/` `g` | 当前目录下递归查询关键字 |
 
-##### [](#file_buffer) file&buffer
+##### [](#file_buffer)file&buffer
 | 快捷键          | 行为                            |
 |-----------------|---------------------------------|
 | `Alt` `/`       | 唤醒 telescope 自定义查询       |
