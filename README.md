@@ -110,7 +110,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvi
 
 3. 进入`Neovim`, 检查环境并安装插件
 ```vim
-# 第一次进入因为没有插间会报错不用管
+# 第一次进入因为没有插件会报错不用管
 
 # 检查环境 保证各类语言的客户端能够对接到 Neovim
 :checkhealth
