@@ -116,9 +116,10 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvi
 :checkhealth
 
 # 安装 Plug 插件
-:plug install
+:PlugInstall
 
-# Packer 插件会自动提示安装
+# 安装 Packer 插件
+:PackerSync
 
 ```
 
