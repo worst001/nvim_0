@@ -132,7 +132,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvi
 
 
 #### 需要注意的
-用的neovim在7.0以上，功能还是相对比较全的。所以在安装前先运行 `:checkhealth` 确保python、nodejs、ruby这些环境都在。
+用的`Neovim`在`7.0`以上，功能还是相对比较全的。所以在安装前先运行 `:checkhealth` 确保`python`、`nodejs`、`ruby`这些环境都在。
 理论上大部分程序环境你都需要装，比如
 
 + `ruby`: 提供内置终端界面
@@ -145,7 +145,9 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvi
 + 此外你的终端环境需要有 [fzf](https://github.com/junegunn/fzf)、 [ag](https://github.com/ggreer/the_silver_searcher)、 [rg](https://github.com/BurntSushi/ripgrep) 等插件，最好配上 [tmux](https://github.com/tmux/tmux)
 
 因为年代有点久了，心血来潮就这么发上来了，有一些命令可能没有
-没有的话你就要慢慢调试了[`摊手`]
+
+PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你就要慢慢调试了[`摊手`]
+
 
 ## 目录结构
 ```
