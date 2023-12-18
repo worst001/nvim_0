@@ -76,6 +76,7 @@ endfunction
 " ===
 nnoremap  <leader>of :call <SID>OpenUrl()<cr>
 function! s:OpenUrl() abort
-  let vtext = expand("<cfile>")
-  silent! execute "!open " . shellescape(expand(vtext))
+  let raw_url = expand("<cfile>")
+  let escaped_url = escape(raw_url, '#%')
+  silent! execute "!open " . escaped_url
 endfunction

@@ -3,6 +3,8 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-sensible'
 Plug 'sjl/vitality.vim'
+Plug 'christoomey/vim-tmux-navigator'
+
 " 主题插件
 Plug 'vim-airline/vim-airline'
 Plug 'connorholyday/vim-snazzy'

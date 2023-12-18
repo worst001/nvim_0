@@ -68,8 +68,8 @@
 " :let g:plug_url_format   = 'https://git::@github.com.cnpmjs.org/%s.git'
 " }}}
 
-" let g:vimspector_enable_mappings = 'HUMAN'
-" packadd! vimspector
+let g:vimspector_enable_mappings = 'HUMAN'
+packadd! vimspector
 
 
 " Basic ---------------------- {{{
@@ -81,6 +81,7 @@ augroup basic
   autocmd BufReadPost * :set autoindent
   autocmd BufReadPost * :set number
   autocmd BufReadPost * :set relativenumber
+  " 保留退出前最后编辑的痕迹
   autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 augroup END
 " }}}
@@ -89,7 +90,7 @@ augroup END
 :source $HOME/.vim/init/init-packages.vim
 " UI 配置(TODO: 必须跟在package后 否则ui配置不生效)
 :source $HOME/.vim/init/init-ui.vim
-" 插件包引入(packer)
+" Lua插件包引入(packer)
 :source $HOME/.vim/init/init-packer.vim
 " 插件配置
 :source $HOME/.vim/init/init-better-defaults.vim

@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/Users/hanwenhao/Cloud/街舞训练/Poppin/兔爷'
+let g:netrw_dirhist_6='/Users/hanwenhao/Cloud/笔记/机器学习/docs/Sklearn'
+let g:netrw_dirhist_5='/Users/hanwenhao/Cloud/笔记/机器学习/docs'
+let g:netrw_dirhist_4='/opt/homebrew/Cellar/redis/6.2.6/bin'
+let g:netrw_dirhist_3='/Users/hanwenhao/Library/Application Scripts/com.youku.mac'
+let g:netrw_dirhist_2='/Applications'
+let g:netrw_dirhist_1='/Users/hanwenhao/Cloud/笔记/Java'
+let g:netrw_dirhist_0='/opt/homebrew/Cellar/neo4j/4.2.3/libexec/conf'
+let g:netrw_dirhist_9='/Users/hanwenhao/Cloud/CodeTemplate/Design/Java/State'
+let g:netrw_dirhist_8='/Users/hanwenhao'

@@ -91,7 +91,6 @@ git clone git@github.com:worst001/nvim_0.git .vim
 # 创建软链接
 ln -sf  ~/.vim/vimrc ~/.vim/init.vim
 
-
 # 先要安装 vim plug
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'

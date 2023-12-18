@@ -145,11 +145,10 @@ augroup END
 " file
 :nmap <leader>fb      :Buffers<cr>
 :nmap <leader>fw      :Windows<cr>
-:nmap <leader>fh      :History<cr>
 :nmap <m-f>           :FZF<CR>
 :nmap <leader>fm      :CocList mru<cr>
 :nmap <leader>ff      :GFiles<CR>
-:nmap <leader>f/      :Locate 
+" :nmap <leader>f/      :Locate
 :nmap <leader>fs      :Telescope persisted<cr>
 " command
 :nmap <leader>fy      :CocList filetypes<cr>
@@ -179,10 +178,10 @@ augroup END
 " ===
 " === chatgpt bot
 " ===
-nnoremap <silent> <leader>bb   :ChatGPT<CR>
-nnoremap <silent> <leader>bl   :ChatGPTActAs<CR>
-nnoremap <silent> <leader>bc   :ChatGPTCompleteCode<CR>
-nnoremap <silent> <leader>be   :ChatGPTEditWithInstructions<CR>
+" nnoremap <silent> <leader>bb   :ChatGPT<CR>
+" nnoremap <silent> <leader>bl   :ChatGPTActAs<CR>
+" nnoremap <silent> <leader>bc   :ChatGPTCompleteCode<CR>
+" nnoremap <silent> <leader>be   :ChatGPTEditWithInstructions<CR>
 
 
 " ===
@@ -206,7 +205,7 @@ nnoremap <silent> <leader>be   :ChatGPTEditWithInstructions<CR>
 :let NERDTreeMapJumpLastChild = "<c-d>"
 :let NERDTreeMapChdir = "<cr>"
 :noremap  M       :Bookmark 
-:noremap  <m-q>   :NERDTreeFocus<cr>
+" :noremap  <m-q>   :NERDTreeFocus<cr>
   " coc-explore
 :noremap <silent> <m-`>  :CocCommand explorer<cr>
 " nvim-tree
@@ -260,7 +259,7 @@ autocmd FileType dbui nmap <buffer> J 10j
 
   " Startify
 autocmd User Startified nmap <buffer> l <plug>(startify-open-buffers)
-:noremap st                   :Startify<CR>
+:noremap stt                   :Startify<CR>
 :noremap sts                  :SSave 
 :noremap stl                  :SLoad 
 :noremap std                  :SDelete 
@@ -271,11 +270,11 @@ autocmd User Startified nmap <buffer> l <plug>(startify-open-buffers)
   " Signature
 " :noremap <m-m>                :SignatureToggleSigns<CR>
   " Mirror
-:noremap <leader>mv           :MirrorVDiff<CR>
-:noremap <leader>ms           :MirrorSDiff<CR>
-:noremap <leader>me           :MirrorVEdit<CR>
-:noremap <leader>mo           :MirrorPull<CR>
-:noremap <leader>mp           :MirrorPush<CR>
+" :noremap <leader>mv           :MirrorVDiff<CR>
+" :noremap <leader>ms           :MirrorSDiff<CR>
+" :noremap <leader>me           :MirrorVEdit<CR>
+" :noremap <leader>mo           :MirrorPull<CR>
+" :noremap <leader>mp           :MirrorPush<CR>
   " Tabular
 :noremap <leader>;            :Tabular //<left>
 
@@ -351,9 +350,9 @@ autocmd User Startified nmap <buffer> l <plug>(startify-open-buffers)
   " ===
   " === Floaterm
   " ===
-  let g:floaterm_keymap_new    = '<M-z>'
-  let g:floaterm_keymap_prev   = '<M-b>'
-  let g:floaterm_keymap_next   = '<M-n>'
+  let g:floaterm_keymap_new    = '<M-n>'
+  let g:floaterm_keymap_prev   = '<M-->'
+  let g:floaterm_keymap_next   = '<M-=>'
   let g:floaterm_keymap_toggle = '<M-0>'
   let g:floaterm_keymap_kill   = '<M-x>'
 
@@ -445,180 +444,5 @@ autocmd User Startified nmap <buffer> l <plug>(startify-open-buffers)
   " ===
   :noremap   <leader>da  :CocCommand cSpell.addWordToDictionary<cr>
 
-  " ===
-  " === vim-which-key
-  " ===
-  :nnoremap <silent> <leader>jk         :<c-u>WhichKey ''<CR>
-  set timeoutlen=500
-  " autocmd! User vim-which-key
-  call which_key#register('', 'g:which_key_map')
-
-  let g:which_key_map = {
-        \ 'name'    : '+all key 按键一栏'    ,
-        \ '"'       : 'yank 面板'            ,
-        \ '%'       : 'matchit 模板'         ,
-        \ '+'       : 'mark 下移书签'        ,
-        \ '_'       : 'mark 上移书签'        ,
-        \ '='       : 'mark 下一个书签'      ,
-        \ '-'       : 'mark 上一个书签'      ,
-        \ '<F2>'    : 'vim 定位到配置入口'   ,
-        \ '<F3>'    : 'vim 定位到插件包'     ,
-        \ '<F4>'    : 'term 悬浮命令行开关'  ,
-        \ '<F5>'    : 'term 上一个悬浮窗口'  ,
-        \ '<F6>'    : 'term 下一个悬浮窗口'  ,
-        \ '<C-T>'   : 'translate 单词翻译'   ,
-        \ '<C-H>'   : 'cursor 增加单个匹配'  ,
-        \ '<C-L>'   : 'cursor 撤消上个匹配'  ,
-        \ '<C-G>'   : 'cursor 跳过下个匹配'  ,
-        \ '<C-J>'   : 'region 扩张选择'      ,
-        \ '<C-K>'   : 'region 紧缩选择'      ,
-        \ '<C-P>'   : 'document 唤出文档'    ,
-        \ '<Down>'  : 'window 扩大高度'      ,
-        \ '<Up>'    : 'window 缩小高度'      ,
-        \ '<Left>'  : 'window 缩小宽度'      ,
-        \ '<Right>' : 'window 扩大宽度'      ,
-        \ '<M-^>'   : 'term 新增悬浮命令行'  ,
-        \ '<M-.>'   : 'find 下一个查找'      ,
-        \ '<M-,>'   : 'find 上一个查找'      ,
-        \ '<M-]>'   : 'tab 下一个标签'       ,
-        \ '<M-[>'   : 'tab 上一个标签'       ,
-        \ '<M-`>'   : 'Vista 唤出列表'       ,
-        \ '<M-Tab>' : 'buffer 缓冲文件列表'  ,
-        \ '<M-u>'   : 'buffer 缓冲修改树'    ,
-        \ '<M-h>'   : 'window 向左切换窗口'  ,
-        \ '<M-j>'   : 'window 向下切换窗口'  ,
-        \ '<M-k>'   : 'window 向上切换窗口'  ,
-        \ '<M-l>'   : 'window 向右切换窗口'  ,
-        \ '<M-n>'   : 'pairs 下一层包含'     ,
-        \ '<M-p>'   : 'pairs 包含功能开关'   ,
-        \ '<M-t>'   : 'ctags 旧版taglist'    ,
-        \ '<M-w>'   : 'window 关闭窗口'      ,
-        \ '<S-Tab>' : 'buffer 上一个缓冲区'  ,
-        \ '<Tab>'   : 'buffer 下一个缓冲区'  ,
-        \ '@'       : 'register 宏录制'      ,
-        \ 'E'       : 'buffer 新增缓冲'      ,
-        \ 'N'       : 'tab 新标签中新增缓冲' ,
-        \ 'H'       : 'move 大距离左位移'    ,
-        \ 'J'       : 'move 大距离下位移'    ,
-        \ 'K'       : 'move 大距离上位移'    ,
-        \ 'L'       : 'move 大距离右位移'    ,
-        \ 'M'       : 'bookmark 输入书签'    ,
-        \ 'Q'       : 'window 退出窗口'      ,
-        \}
-  let g:which_key_map[' ']= {
-      \ 'name' : '+mapleader'            ,
-      \ ';'    : 'tabular 代码对齐'      ,
-      \ '<Tab>': 'buffer 删除当前缓冲'   ,
-      \ 'a'    : {
-        \ 'name' : '+register 简易宏录制'
-        \},
-      \ 'c'    : {
-        \ 'name' : '+comment 批注'
-        \},
-      \ 'd'    : {
-        \ 'name' : '+delete 删除操作'
-        \},
-      \ 'f'    : {
-        \ 'name' : '+file 文件追踪'
-        \},
-      \ 'g'    : {
-        \ 'name' : '+git 代码库操作'
-        \},
-      \ 'h'    : {
-        \ 'name' : '+history 文件历史'
-        \},
-      \ 'i'    : {
-        \ 'name' : '+insert 输入辅助'
-        \},
-      \ 'j'    : {
-        \ 'name' : '+command 命令列表'
-        \},
-      \ 'k'    : 'lint 代码格式化',
-      \ 'l'    : {
-        \ 'name' : '+localui 当前文件外观'
-        \},
-      \ 'm'    : {
-        \ 'name' : '+mirror 文件同步'
-        \},
-      \ 'o'    : {
-        \ 'name' : '+open 打开本地应用'
-        \},
-      \ 'q'    : 'window 唤出快速窗口',
-      \ 'r'    : {
-        \ 'name' : '+rename 重命名'
-        \},
-      \ 's'    : {
-        \ 'name' : '+sql 数据库操作'
-        \},
-      \ 't'    : {
-        \ 'name' : '+terminal tool 终端工具'
-        \},
-      \ 'w'    : {
-        \ 'name' : '+wiki 编译成文档'
-        \},
-      \ 'x'    : {
-        \ 'name' : '+excute 执行文件'
-        \},
-      \ 'y'    : 'yank 唤出粘贴面板',
-      \ 'z'    : 'folder 折叠预览',
-      \ }
-  let g:which_key_map['g']= {
-      \ 'name' : '+code 跳转'            ,
-      \ }
-  let g:which_key_map["'"]= {
-      \ 'name' : '+mark 跳转'            ,
-      \ }
-  let g:which_key_map['[']= {
-      \ 'name' : '+left jump-1'          ,
-      \ }
-  let g:which_key_map[']']= {
-      \ 'name' : '+right jump-1'         ,
-      \ }
-  let g:which_key_map['\']= {
-      \ 'name' : '+leader 自定义前缀'    ,
-      \ }
-  let g:which_key_map['.']= {
-      \ 'name' : '+home 将当前目录设为家',
-      \ }
-  let g:which_key_map['`']= {
-      \ 'name' : '+mark 上下查找书签'    ,
-      \ }
-  let g:which_key_map['c']= {
-      \ 'name' : '+change 变换操作'      ,
-      \ }
-  let g:which_key_map['d']= {
-      \ 'name' : '+delete 删除操作'      ,
-      \ }
-  let g:which_key_map['i']= {
-      \ 'name' : '+insert 插入操作'      ,
-      \ }
-  let g:which_key_map['M']= {
-      \ 'name' : '+markdown 文档'        ,
-      \ }
-  let g:which_key_map['S']= {
-      \ 'name' : '+split 竖直切割窗口1'  ,
-      \ }
-  let g:which_key_map['s']= {
-      \ 'name' : '+split 竖直切割窗口2'  ,
-      \ }
-  let g:which_key_map['U']= {
-      \ 'name' : '+upcase 大写化单词'  ,
-      \ }
-  let g:which_key_map['u']= {
-      \ 'name' : '+locase 小写化单词'  ,
-      \ }
-  let g:which_key_map['V']= {
-      \ 'name' : '+split 横向切割窗口1'  ,
-      \ }
-  let g:which_key_map['v']= {
-      \ 'name' : '+split 横向切割窗口2'  ,
-      \ }
-  let g:which_key_map['t']= {
-      \ 'name' : '+tab 跳转到指定标签页' ,
-      \ }
-  let g:which_key_map['y']= {
-      \ 'name' : '+pairs 变换包含符号'   ,
-      \ }
-" }}}
 
 " vip 快速块选择
