@@ -43,7 +43,7 @@
 
 ## 基本信息
 
-主要使用`coc.nvim`实现代码补全，配置了 `NeoVim` 所需要基本功能，为了层次清晰定义了一些结构。
+主要使用 [coc.nvim](https://github.com/neoclide/coc.nvim) 实现代码补全，配置了 `NeoVim` 所需要基本功能，为了层次清晰定义了一些结构。
 
 插件涵盖所有主流编辑功能，部署完后只要环境允许可以开发各类语言，供学习用当然开发也是没有问题的
 
@@ -80,15 +80,23 @@
 + 因为习惯了 `vim` 的 `vimrc` 这里新建了 `vimrc` 文件然后做了软链接
 
 1. 先安装 [Neovim](https://github.com/neovim/neovim/releases)
++ 安装完后以 `Linux`/`Mac` 为例其配置目录默认为 `~/.config/nvim`
 
 2. 设置配置目录 安装插件管理
++ 创建软链接 这里为了和原生 `Vim` 统一对路径做了些处理
++ 根据自身环境情况可可自行定义路径
+
 ```bash
+# home
 cd ~
 
 # clone
 git clone git@github.com:worst001/nvim_0.git .vim
 
-# 创建软链接
+# nvim 配置链接为 .vim
+ln -sf  ~/.vim ~/.config/nvim
+
+# vimrc 软链为 init.vim
 ln -sf  ~/.vim/vimrc ~/.vim/init.vim
 
 # 先要安装 vim plug
@@ -102,6 +110,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvi
 
 3. 进入`Neovim`, 检查环境并安装插件
 ```vim
+# 第一次进入因为没有插间会报错不用管
 
 # 检查环境 保证各类语言的客户端能够对接到 Neovim
 :checkhealth
@@ -113,10 +122,18 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvi
 
 ```
 
+4. 显示 `Startify 界面` 表示安装成功
+
+![Startify](Startify.png)
+
++ `Startify` 页面用的是自己的名字 `HWH VIM`
++ 可以使用 [figlet](https://github.com/cmatsuoka/figlet) 自行修改主界面名称(注意转义字符)
+
 
 #### 需要注意的
 用的neovim在7.0以上，功能还是相对比较全的。所以在安装前先运行 `:checkhealth` 确保python、nodejs、ruby这些环境都在。
 理论上大部分程序环境你都需要装，比如
+
 ```diff
 + ruby: 提供内置终端界面
 + node: coc补全插件根本离不开它
@@ -127,9 +144,13 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvi
 + lua: packer插件必备
 ```
 
-+ 此外你的终端环境需要有 `fzf`、`ag`、`rg` 等插件，最好配上 `tmux`
++ 此外你的终端环境需要有
+    + [fzf](https://github.com/junegunn/fzf)、
+    + [ag](https://github.com/ggreer/the_silver_searcher)、
+    + [rg](https://github.com/BurntSushi/ripgrep)
+    + 等插件，最好配上 [tmux](https://github.com/tmux/tmux)
 + 因为年代有点久了，心血来潮就这么发上来了，有一些命令可能没有
-+ 没有的话你就要慢慢调试了[摊手]
++ 没有的话你就要慢慢调试了[`摊手`]
 
 ## 目录结构
 ```
