@@ -16,7 +16,7 @@
   - [初始化的时候分了5个模块在init分别为](#初始化的时候分了6个模块在init分别为)
   - [插件包分为Plug包_自定义包_Lua包](#插件包分为Plug包_自定义包_Lua包)
   - [基本配置与按键](#基本配置与按键)
-  - [如何安装](#如何安装)
+* [如何安装](#如何安装)
   - [需要注意的](#需要注意的)
 * [目录结构](#目录结构)
   - [环境设置](#环境设置)
@@ -39,6 +39,8 @@
   - [Packer插件](#Packer插件)
   - [自定义插件与调试](#自定义插件与调试)
 * [写在最后](#写在最后)
+  - [参考资料](#参考资料)
+  - [博客地址](#博客地址)
  <!-- /TOC -->
 
 ## 基本信息
@@ -73,7 +75,7 @@
 + 按键配置都放在 `init-keybindings.vim` 不需要就注释掉
     + 主要还是个人习惯 不爽就改成你的
 
-#### 如何安装
+## 如何安装
 
 + `Neovim` 默认环境路径是用户目录下的 `.vim`
 + `Neovim` 默认使用 `init.vim` 替换原来的 `vimrc`
@@ -131,7 +133,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvi
 + 可以使用 [figlet](https://github.com/cmatsuoka/figlet) 自行修改主界面名称(注意转义字符)
 
 
-#### 需要注意的
+### 需要注意的
 用的`Neovim`在`7.0`以上，功能还是相对比较全的。所以在安装前先运行 `:checkhealth` 确保`python`、`nodejs`、`ruby`这些环境都在。
 理论上大部分程序环境你都需要装，比如
 
@@ -202,7 +204,7 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 └── vimrc
 
 ```
-#### 环境设置
+### 环境设置
 | 快捷键          | 行为                 |
 |-----------------|----------------------|
 | `F2`            | 进入主配置文件       |
@@ -226,7 +228,7 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 | `SPACE` `d` `s`                   | 删除swap缓存      |
 | `SPACE` `y`                       | 粘贴板历史        |
 
-#### 窗口按键
+### 窗口按键
 | 快捷键                           | 行为                  |
 |----------------------------------|-----------------------|
 | `Alt` `w`                        | 关闭当前窗口          |
@@ -238,7 +240,7 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 | `Alt` `k`/`j`/`l`/`h`            | 切换窗口              |
 | `Alt` `Up`/`Down`/`Left`/`Right` | 改变窗口大小          |
 
-#### 标签按键
+### 标签按键
 | 快捷键             | 行为                                         |
 |--------------------|----------------------------------------------|
 | `t` `1`/`2`.../`9` | 切换到标签1 (1-9)                            |
@@ -248,7 +250,7 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 | `Shift` + `Tab`    | 切换到上一个buffer                           |
 | `Space` `Tab`      | 删除当前buffer                               |
 
-#### 快速进入区域内部
+### 快速进入区域内部
 + 配合 `AutoPairs` 可以对各种块添加删除括号 这里给出老方案做参考
 + `AutoPairs` 自行查询文档 按键不冲突
 
@@ -264,7 +266,7 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 | <visual> `Shift` + `s` | 使用 AutoPairs 对<visual>块添加某种括号                         |
 
 
-#### 内部终端
+### 内部终端
 + 使用的是 [vim-floaterm](https://github.com/voldikss/vim-floaterm) 内部终端的好处在于可以绑定快捷键 而且目录位于当前文件下 
 + 坏处在于内部终端执行时是和当前 `nvim` 同步的 当前 `nvim` 关闭终端命令会中断
 + 批量命令的话还是建议使用外部终端 或者配合 `tmux`
@@ -278,7 +280,7 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 | `Alt` + `x` | 关闭终端标签                                                       |
 | `Esc` `d`   | 查看文件大小(其实就是 du -sh * \| sort -rh<cr>) 根据需要可自行定义 |
 
-#### 界面展示设置
+### 界面展示设置
 | 快捷键          | 行为               |
 |-----------------|--------------------|
 | `SPACE` `l` `i` | 开启/关闭 查询高亮 |
@@ -289,9 +291,9 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 | `SPACE` `l` `y` | 开启/关闭 Zen 模式 |
 | `SPACE` `l` `p` | 开启/关闭 拼写检查 |
 
-#### 索引与查询
+### 索引与查询
 
-##### grep
+#### grep
 | 快捷键          | 行为                     |
 |-----------------|--------------------------|
 | `SPACE` `/`     | 当前buffer关键字查询     |
@@ -299,7 +301,7 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 | `SPACE` `/` `/` | 所有buffer关键字查询     |
 | `SPACE` `/` `g` | 当前目录下递归查询关键字 |
 
-##### file_buffer
+#### file_buffer
 | 快捷键          | 行为                            |
 |-----------------|---------------------------------|
 | `Alt` `/`       | 唤醒 telescope 自定义查询       |
@@ -310,21 +312,21 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 | `SPACE` `f` `s` | 查看最近的session               |
 | `SPACE` `f` `k` | 查询快捷键                      |
 
-##### command
+#### command
 | 快捷键          | 行为         |
 |-----------------|--------------|
 | `SPACE` `j` `h` | Vim命令历史  |
 | `SPACE` `j` `j` | 查看coc命令  |
 | `SPACE` `j` `s` | 清除多余空格 |
 
-##### history
+#### history
 | 快捷键          | 行为                               |
 |-----------------|------------------------------------|
 | `SPACE` `h` `h` | 查询buffer打开历史                 |
 | `SPACE` `h` `s` | 查询`查询`历史                     |
 | `SPACE` `h` `m` | 查询痕迹历史(就是编辑时留下的痕迹) |
 
-#### 功能窗口
+### 功能窗口
 | 快捷键      | 行为                          |
 |-------------|-------------------------------|
 | `Alt` + \`  | 文件浏览窗口                  |
@@ -332,7 +334,7 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 | `Alt` + `1` | 数据库窗口                    |
 | `Alt` + `t` | 文件内部导航(函数导航)        |
 
-#### 编辑模式
+### 编辑模式
 | 快捷键          | 行为                         |
 |-----------------|------------------------------|
 | `SPACE` `i` `s` | 开启当前 buffer 的 snip 定义 |
@@ -353,24 +355,24 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 | `Ctrl` + `h`        | 开启关键字批量选择 [Multiple Cursor](https://github.com/mg979/vim-visual-multi),  `n` 下一个匹配, `Q` 返回上一个匹配 |
 | `m` `t`             | 对某一行打上标签 [vim-bookmarks](https://github.com/MattesGroeger/vim-bookmarks) , `=` 下一标签, `-` 上一标签        |
 
-#### 一些好用的自定义功能
+### 一些好用的自定义功能
 | 快捷键          | 行为                                                                             |
 |-----------------|----------------------------------------------------------------------------------|
 | `SPACE` `x` `y` | 简单运行当前 buffer (主流语言基本上都支持 没有的话改下 `plugin/program-run.vim`) |
 | `j` `j`         | 下一个锚点 <++> 就是锚点 你也可以写成 <+锚点+>                                   |
 | `k` `k`         | 上一个锚点                                                                       |
 
-#### 主题与外观
+### 主题与外观
 
 + 主题与ui参数在 `init/init-ui.vim` 下, 可根据喜好设置
 + 为了好看我配合Iterm设置成了半透明 如果不需要可以注释 `augroup theme_customization_fix` 块
 
-#### Packer插件
+### Packer插件
 
 + 其他`Packer`插件配置都在`lua/plugin-config`下，因为`neovim`本身一直在不断更新，
 + 如果找到更好的`Packer`插件，注释掉原有的，新的配置放`lua/plugin-config`下即可
 
-#### 自定义插件与调试
+### 自定义插件与调试
 
 + 自定义插件`plugin`需要调用的脚本时统一放在`shell`目录, 有兴趣的小伙伴可以实现更为复杂的功能, 特别优秀的话就打包开源发布吧
 + `VimSpector` 很久没用了，因为目前我调试时用的是 `Intellij` 全家桶, 如果需要可以查看[VimSpector](https://github.com/puremourning/vimspector)，快捷键保证不和 `F2` `F3` 冲突即可
@@ -387,7 +389,7 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 随着社区的壮大，功能也在不断迭代，随着使用和学习的深入有更多的功能用法等你去发现、去实现
 
 
-#### 参考资料
+### 参考资料
 [https://github.com/theniceboy/nvim](https://github.com/theniceboy/nvim)
 
 [https://github.com/neovim/neovim](https://github.com/folke/lazy.nvim)
@@ -396,7 +398,7 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 
 [https://github.com/rockerBOO/awesome-neovim](https://github.com/rockerBOO/awesome-neovim)
 
-#### 博客地址
+### 博客地址
 
 喜欢学习技术的小伙伴可以访问我的博客，主页地址请访问这里
 
