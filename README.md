@@ -342,12 +342,23 @@ ln -sf ~/.vim/init.vim ~/.vim/vimrc
 
 ## 写在最后
 
-暂时就写这么点，`Vim` 大佬有很多，有兴趣的可以看这个配置, 我也是跟着这个神仙学的:
+暂时就写这么点，`Vim` 大佬有很多，有兴趣的可以看这个配置, 我也是跟别人学的
 
-> 人家才20岁哦
+[https://github.com/theniceboy/nvim](https://github.com/theniceboy/nvim)
+
+`Neovim` 发展的很快，2022年年底左右 `lua plugin` 已经有人实现了自动化安装，不知不觉已经有 `go cliet` 了
+
+随着使用和学习的深入有更多的功能用法等你去发现、去实现
+
 
 #### 参考资料
 [https://github.com/theniceboy/nvim](https://github.com/theniceboy/nvim)
+
+[https://github.com/neovim/neovim](https://github.com/folke/lazy.nvim)
+
+[https://github.com/folke/lazy.nvim](https://github.com/folke/lazy.nvim)
+
+[https://github.com/rockerBOO/awesome-neovim](https://github.com/rockerBOO/awesome-neovim)
 
 #### 博客地址
 
