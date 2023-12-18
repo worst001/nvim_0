@@ -4,7 +4,9 @@ return require('packer').startup({
         -- Base Dependency
         use 'MunifTanjim/nui.nvim'
         use "nvim-lua/plenary.nvim"
-        use "nvim-telescope/telescope.nvim"
+
+        -- telescope
+        use {'nvim-telescope/telescope.nvim', tag = '0.1.5'}
 
         -- Packer can manage itself
         use 'wbthomason/packer.nvim'
@@ -13,7 +15,7 @@ return require('packer').startup({
         use 'andrejlevkovitch/vim-lua-format'
 
         -- ChatGPT
-        use 'jackMort/ChatGPT.nvim'
+        -- use 'jackMort/ChatGPT.nvim'
 
         -- todo-comments
         use "folke/todo-comments.nvim"
@@ -21,8 +23,16 @@ return require('packer').startup({
         -- session save
         use "olimorris/persisted.nvim"
 
+        -- nvim-tree
+        use {
+            'nvim-tree/nvim-tree.lua',
+            requires = {
+                'nvim-tree/nvim-web-devicons' -- optional
+            }
+        }
+
         -- treesitter
-        use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+        use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
 
     end,
 

@@ -28,8 +28,8 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'amix/open_file_under_cursor.vim'
 " Plug 'hardcoreplayers/dashboard-nvim'
 " Plug 'mg979/vim-xtabline'
-Plug 'nvim-tree/nvim-web-devicons' " optional, for file icons
-Plug 'nvim-tree/nvim-tree.lua'
+" Plug 'nvim-tree/nvim-web-devicons' " optional, for file icons
+" Plug 'nvim-tree/nvim-tree.lua'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
 
 
@@ -59,7 +59,7 @@ Plug 'dermusikman/sonicpi.vim'
 Plug 'tikhomirov/vim-glsl'
 Plug 'beyondmarc/hlsl.vim'
 Plug 'elubow/cql-vim'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'editorconfig/editorconfig-vim'
 
 
@@ -77,7 +77,7 @@ Plug 'dense-analysis/ale'
 Plug 'pappasam/coc-jedi', { 'do': 'yarn install --frozen-lockfile && yarn build' }
 
 " 文本编辑
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+" Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle' }
 Plug 'plasticboy/vim-markdown'
 " Plug 'lervag/vimtex'

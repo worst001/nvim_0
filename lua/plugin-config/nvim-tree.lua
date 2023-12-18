@@ -8,15 +8,17 @@ vim.opt.termguicolors = true
 -- empty setup using defaults
 require("nvim-tree").setup{
 
-  -- custom mappings
-  view = {
-    mappings = {
-      list = {
-        -- add multiple normal mode mappings for edit
-        { key = { "<CR>", "o", "h", "l" }, action = "edit", mode = "n" },
-
-      }
-    }
-  }
+  -- -- custom mappings
+  -- view = {
+  --   mappings = {
+  --     list = {
+  --       -- add multiple normal mode mappings for edit
+  --       { key = { "<CR>", "o", "h", "l" }, action = "edit", mode = "n" },
+  --
+  --     }
+  --   }
+  -- }
 
 }
+
+
