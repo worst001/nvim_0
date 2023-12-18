@@ -79,20 +79,38 @@
 + `Neovim` 默认使用 `init.vim` 替换原来的 `vimrc`
 + 因为习惯了 `vim` 的 `vimrc` 这里新建了 `vimrc` 文件然后做了软链接
 
+1. 先安装 [Neovim](https://github.com/neovim/neovim/releases)
+
+2. 设置配置目录 安装插件管理
 ```bash
 cd ~
 
+# clone
 git clone git@github.com:worst001/nvim_0.git .vim
 
-ln -sf ~/.vim/init.vim ~/.vim/vimrc
+# 创建软链接
+ln -sf  ~/.vim/vimrc ~/.vim/init.vim
+
+
+# 先要安装 vim plug
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+# 还需要安装 packer
+git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
 ```
 
+3. 进入`Neovim`, 检查环境并安装插件
 ```vim
 
+# 检查环境 保证各类语言的客户端能够对接到 Neovim
 :checkhealth
 
+# 安装 Plug 插件
 :plug install
+
+# Packer 插件会自动提示安装
 
 ```
 
