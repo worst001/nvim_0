@@ -142,11 +142,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvi
 + `golang`: 底层插件`FZF`就是用`go`写的，你说要不要
 + `java`: 这个也不可能没有吧
 + `lua`: `packer`插件必备
-+ 此外你的终端环境需要有
-    + [fzf](https://github.com/junegunn/fzf)、
-    + [ag](https://github.com/ggreer/the_silver_searcher)、
-    + [rg](https://github.com/BurntSushi/ripgrep)
-    + 等插件，最好配上 [tmux](https://github.com/tmux/tmux)
++ 此外你的终端环境需要有 [fzf](https://github.com/junegunn/fzf)、 [ag](https://github.com/ggreer/the_silver_searcher)、 [rg](https://github.com/BurntSushi/ripgrep) 等插件，最好配上 [tmux](https://github.com/tmux/tmux)
 + 因为年代有点久了，心血来潮就这么发上来了，有一些命令可能没有
 + 没有的话你就要慢慢调试了[`摊手`]
 
