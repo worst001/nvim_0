@@ -47,6 +47,8 @@
 
 插件涵盖所有主流编辑功能，部署完后只要环境允许可以开发各类语言
 
+`这个是几年前的配置方案，经供参考用`，现在有很多新的插件，`Neovim` 不断的在迭代，不可能停滞不前。
+
 
 #### 初始化的时候分了5个模块在init，分别为
 + `init-packages.vim`: Plug插件包配置
@@ -72,6 +74,19 @@
     + 主要还是个人习惯 不爽就改成你的
 
 #### 如何安装
+
++ `Neovim` 默认环境路径是用户目录下的 `.vim`
++ `Neovim` 默认使用 `init.vim` 替换原来的 `vimrc`
++ 因为习惯了 `vim` 的 `vimrc` 这里新建了 `vimrc` 文件然后做了软链接
+
+```bash
+cd ~
+
+git clone git@github.com:worst001/nvim_0.git .vim
+
+ln -sf ~/.vim/init.vim ~/.vim/vimrc
+
+```
 
 ```vim
 
