@@ -380,7 +380,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvi
 
 ## 写在最后
 
-暂时就写这么点，`Vim` 大佬有很多，有兴趣的可以看这个配置, 我也是跟别人学的
+暂时就写这么点，`Vim` 大佬有很多，有兴趣的可以看这个配置, 我也是跟这个神仙学的
 
 [https://github.com/theniceboy/nvim](https://github.com/theniceboy/nvim)
 
