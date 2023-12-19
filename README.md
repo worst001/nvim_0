@@ -383,7 +383,8 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 
 喜欢学习技术的小伙伴可以访问我的博客，博客地址：[http://mkdocs.grft.top](http://mkdocs.grft.top)
 
-### 参考资料
+## 参考资料
+
 [https://github.com/theniceboy/nvim](https://github.com/theniceboy/nvim)
 
 [https://github.com/neovim/neovim](https://github.com/folke/lazy.nvim)
