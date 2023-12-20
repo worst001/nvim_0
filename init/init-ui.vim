@@ -98,8 +98,8 @@ augroup END
 " highlight Cursor guibg=Green guifg=Green ctermbg=2 ctermfg=4
 
 " highlight PmenuSel ctermbg=4 ctermfg=14
-" highlight CursorColumn ctermbg=4
 
+" highlight CursorColumn guibg=#ABB2BF ctermbg=7
 
 " }}}
 

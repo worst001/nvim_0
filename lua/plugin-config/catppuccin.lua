@@ -36,6 +36,7 @@ require("catppuccin").setup({
             TabLineSel = { bg = colors.surface2 },
             CmpBorder = { fg = colors.surface2 },
             Pmenu = { bg = colors.none },
+            CursorColumn = { bg = colors.surface2 },
         }
     end,
     integrations = {

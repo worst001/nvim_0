@@ -155,6 +155,7 @@ augroup END
 :nmap <leader>fy      :CocList filetypes<cr>
 :nmap <leader>fc      :Colors<cr>
 :nmap <leader>fk      :Maps<cr>
+:nmap <leader>jh      :CommandHistory<cr>
 :map  <leader>jj      :CocCommand<cr>
 
 :noremap <m-/>        :Telescope<cr>
@@ -190,7 +191,6 @@ augroup END
 :noremap <leader>hh   :History<cr>
 :noremap <leader>hs   :History/<cr>
 :noremap <leader>hm   :Marks<cr>
-:noremap <leader>hj   :CommandHistory<cr>
 
 " NERDTree
 :let NERDTreeMapOpenExpl = "e"

@@ -4,7 +4,7 @@
 lua require('plugins')
 
 " 定位插件配置
-lua require('plugin-config/nvim-treesitter')
+" lua require('plugin-config/nvim-treesitter')
 lua require('plugin-config/nvim-tree')
 lua require('plugin-config/catppuccin')
 lua require('plugin-config/lualine')
