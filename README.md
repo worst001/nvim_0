@@ -237,7 +237,7 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 
 ### 窗口按键
 
-![窗口按键](https://xiyou-oss.oss-cn-shanghai.aliyuncs.com/nvim_0/img/窗口按键.gif)
+![窗口按键](img/窗口按键.gif)
 
 | 快捷键                           | 行为                  |
 |----------------------------------|-----------------------|
@@ -253,7 +253,7 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 
 ### 标签按键
 
-![标签按键](https://xiyou-oss.oss-cn-shanghai.aliyuncs.com/nvim_0/img/标签按键.gif)
+![标签按键](img/标签按键.gif)
 
 | 快捷键             | 行为                                         |
 |--------------------|----------------------------------------------|
@@ -268,7 +268,7 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 + 配合 `AutoPairs` 可以对各种块添加删除括号 这里给出老方案做参考
 + `AutoPairs` 自行查询文档 按键不冲突
 
-![快速进入区域内部](https://xiyou-oss.oss-cn-shanghai.aliyuncs.com/nvim_0/img/快速进入区域内部.gif)
+![快速进入区域内部](img/快速进入区域内部.gif)
 
 | 快捷键                 | 行为                                                            |
 |------------------------|-----------------------------------------------------------------|
@@ -287,7 +287,7 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 + 坏处在于内部终端执行时是和当前 `nvim` 同步的 当前 `nvim` 关闭终端命令会中断
 + 批量命令的话还是建议使用外部终端 或者配合 `tmux`
 
-![内部终端](https://xiyou-oss.oss-cn-shanghai.aliyuncs.com/nvim_0/img/内部终端.gif)
+![内部终端](img/内部终端.gif)
 
 | 快捷键      | 行为                                                               |
 |-------------|--------------------------------------------------------------------|
@@ -300,7 +300,7 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 
 ### 界面展示设置
 
-![界面展示设置](https://xiyou-oss.oss-cn-shanghai.aliyuncs.com/nvim_0/img/界面展示设置.gif)
+![界面展示设置](img/界面展示设置.gif)
 
 | 快捷键          | 行为               |
 |-----------------|--------------------|
@@ -316,7 +316,7 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 
 #### grep
 
-![grep](https://xiyou-oss.oss-cn-shanghai.aliyuncs.com/nvim_0/img/索引与查询grep.gif)
+![grep](img/索引与查询grep.gif)
 
 | 快捷键          | 行为                     |
 |-----------------|--------------------------|
@@ -327,7 +327,7 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 
 #### file_buffer
 
-![file_buffer](https://xiyou-oss.oss-cn-shanghai.aliyuncs.com/nvim_0/img/索引与查询file_buffer.gif)
+![file_buffer](img/索引与查询file_buffer.gif)
 
 | 快捷键          | 行为                            |
 |-----------------|---------------------------------|
@@ -355,7 +355,7 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 
 ### 功能窗口
 
-![功能窗口](https://xiyou-oss.oss-cn-shanghai.aliyuncs.com/nvim_0/img/功能窗口.gif)
+![功能窗口](img/功能窗口.gif)
 
 | 快捷键      | 行为                          |
 |-------------|-------------------------------|
@@ -366,7 +366,7 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 
 ### 编辑模式
 
-![编辑模式](https://xiyou-oss.oss-cn-shanghai.aliyuncs.com/nvim_0/img/编辑模式.gif)
+![编辑模式](img/编辑模式.gif)
 
 | 快捷键          | 行为                         |
 |-----------------|------------------------------|
@@ -379,7 +379,7 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 + `Startify` 入口名字是我 `HWH VIM` 你得改成你自己 或者删掉
 + 位置在 `init/init-better-defaults.vim` 下的 `let g:startify_custom_header`
 
-![visual-multi](https://xiyou-oss.oss-cn-shanghai.aliyuncs.com/nvim_0/img/visual-multi.gif)
+![visual-multi](img/visual-multi.gif)
 
 | 快捷键              | 行为                                                                                                                 |
 |---------------------|----------------------------------------------------------------------------------------------------------------------|
@@ -392,7 +392,7 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 
 #### 一些好用的自定义功能
 
-![锚点](https://xiyou-oss.oss-cn-shanghai.aliyuncs.com/nvim_0/img/锚点.gif)
+![锚点](img/锚点.gif)
 
 | 快捷键          | 行为                                                                             |
 |-----------------|----------------------------------------------------------------------------------|
