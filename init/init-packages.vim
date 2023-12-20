@@ -7,7 +7,7 @@ Plug 'christoomey/vim-tmux-navigator'
 
 " 主题插件
 Plug 'vim-airline/vim-airline'
-Plug 'connorholyday/vim-snazzy'
+" Plug 'connorholyday/vim-snazzy'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'joshdick/onedark.vim'
 Plug 'dracula/vim', {'as':'dracula'}
@@ -15,9 +15,8 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'rafi/awesome-vim-colorschemes'
 " Plug 'NLKNguyen/papercolor-theme'
 Plug 'phanviet/vim-monokai-pro'
-Plug 'catppuccin/nvim', {'as': 'catppuccin'}
+" Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 Plug 'nvim-lualine/lualine.nvim'
-
 
 " 文件导航
 Plug 'mhinz/vim-startify'
@@ -27,12 +26,6 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 " Plug 'fholgado/minibufexpl.vim'
 Plug 'amix/open_file_under_cursor.vim'
 " Plug 'hardcoreplayers/dashboard-nvim'
-" Plug 'mg979/vim-xtabline'
-" Plug 'nvim-tree/nvim-web-devicons' " optional, for file icons
-" Plug 'nvim-tree/nvim-tree.lua'
-" Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
-" Plug 'akinsho/bufferline.nvim', { 'tag': '*' }
-
 
 " 代码导航
 Plug 'liuchengxu/vista.vim'
@@ -42,7 +35,7 @@ Plug 'yuttie/comfortable-motion.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'liuchengxu/vim-clap'
 Plug 'brooth/far.vim'
-Plug 'liuchengxu/vim-which-key',
+" Plug 'liuchengxu/vim-which-key',
 
 " 代码高亮与优化
 Plug 'posva/vim-vue'
@@ -62,7 +55,6 @@ Plug 'beyondmarc/hlsl.vim'
 Plug 'elubow/cql-vim'
 " Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'editorconfig/editorconfig-vim'
-
 
 " 图标与颜色
 Plug 'ryanoasis/vim-devicons'
@@ -125,6 +117,7 @@ Plug 'voldikss/vim-floaterm'
 Plug 'vitalk/vim-simple-todo'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'itchyny/calendar.vim'
+
 " 代码调试
 Plug 'puremourning/vimspector'
 

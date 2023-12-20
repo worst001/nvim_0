@@ -6,6 +6,7 @@ return require('packer').startup({
         use "nvim-lua/plenary.nvim"
 
         use 'nvim-tree/nvim-web-devicons'
+        use { "catppuccin/nvim", as = "catppuccin" }
 
         -- bufferline
         use {
