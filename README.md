@@ -283,7 +283,7 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 
 
 ### 内部终端
-+ 使用的是 [vim-floaterm](https://github.com/voldikss/vim-floaterm) 内部终端的好处在于可以绑定快捷键 而且目录位于当前文件下 
++ 使用的是 [vim-floaterm](https://github.com/voldikss/vim-floaterm) 内部终端的好处在于可以绑定快捷键 而且目录位于当前文件下
 + 坏处在于内部终端执行时是和当前 `nvim` 同步的 当前 `nvim` 关闭终端命令会中断
 + 批量命令的话还是建议使用外部终端 或者配合 `tmux`
 
