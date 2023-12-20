@@ -201,9 +201,12 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 │   └── help_cn.vim
 ├── tree.txt
 └── vimrc
-
 ```
+
 ### 环境设置
+
+![环境设置](https://xiyou-oss.oss-cn-shanghai.aliyuncs.com/nvim_0/img/环境设置.gif)
+
 | 快捷键          | 行为                 |
 |-----------------|----------------------|
 | `F2`            | 进入主配置文件       |
@@ -213,7 +216,11 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 | `SPACE` `F4`    | Packer插件自定义设置 |
 | `SPACE` `s` `x` | 配置文件立即生效     |
 
+
 ## 基础按键
+
+![基础按键](https://xiyou-oss.oss-cn-shanghai.aliyuncs.com/nvim_0/img/基础按键.gif)
+
 | 快捷键                            | 行为              |
 |-----------------------------------|-------------------|
 | `j` `k`                           | 右手 ESC          |
@@ -227,7 +234,11 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 | `SPACE` `d` `s`                   | 删除swap缓存      |
 | `SPACE` `y`                       | 粘贴板历史        |
 
+
 ### 窗口按键
+
+![窗口按键](https://xiyou-oss.oss-cn-shanghai.aliyuncs.com/nvim_0/img/窗口按键.gif)
+
 | 快捷键                           | 行为                  |
 |----------------------------------|-----------------------|
 | `Alt` `w`                        | 关闭当前窗口          |
@@ -239,7 +250,11 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 | `Alt` `k`/`j`/`l`/`h`            | 切换窗口              |
 | `Alt` `Up`/`Down`/`Left`/`Right` | 改变窗口大小          |
 
+
 ### 标签按键
+
+![标签按键](https://xiyou-oss.oss-cn-shanghai.aliyuncs.com/nvim_0/img/标签按键.gif)
+
 | 快捷键             | 行为                                         |
 |--------------------|----------------------------------------------|
 | `t` `1`/`2`.../`9` | 切换到标签1 (1-9)                            |
@@ -252,6 +267,8 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 ### 快速进入区域内部
 + 配合 `AutoPairs` 可以对各种块添加删除括号 这里给出老方案做参考
 + `AutoPairs` 自行查询文档 按键不冲突
+
+![快速进入区域内部](https://xiyou-oss.oss-cn-shanghai.aliyuncs.com/nvim_0/img/快速进入区域内部.gif)
 
 | 快捷键                 | 行为                                                            |
 |------------------------|-----------------------------------------------------------------|
@@ -270,6 +287,8 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 + 坏处在于内部终端执行时是和当前 `nvim` 同步的 当前 `nvim` 关闭终端命令会中断
 + 批量命令的话还是建议使用外部终端 或者配合 `tmux`
 
+![内部终端](https://xiyou-oss.oss-cn-shanghai.aliyuncs.com/nvim_0/img/内部终端.gif)
+
 | 快捷键      | 行为                                                               |
 |-------------|--------------------------------------------------------------------|
 | `Alt` + `0` | 开启/关闭 内部终端                                                 |
@@ -280,6 +299,9 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 | `Esc` `d`   | 查看文件大小(其实就是 du -sh * \| sort -rh<cr>) 根据需要可自行定义 |
 
 ### 界面展示设置
+
+![界面展示设置](https://xiyou-oss.oss-cn-shanghai.aliyuncs.com/nvim_0/img/界面展示设置.gif)
+
 | 快捷键          | 行为               |
 |-----------------|--------------------|
 | `SPACE` `l` `i` | 开启/关闭 查询高亮 |
@@ -293,6 +315,9 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 ### 索引与查询
 
 #### grep
+
+![grep](https://xiyou-oss.oss-cn-shanghai.aliyuncs.com/nvim_0/img/索引与查询grep.gif)
+
 | 快捷键          | 行为                     |
 |-----------------|--------------------------|
 | `SPACE` `/`     | 当前buffer关键字查询     |
@@ -301,6 +326,9 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 | `SPACE` `/` `g` | 当前目录下递归查询关键字 |
 
 #### file_buffer
+
+![file_buffer](https://xiyou-oss.oss-cn-shanghai.aliyuncs.com/nvim_0/img/索引与查询file_buffer.gif)
+
 | 快捷键          | 行为                            |
 |-----------------|---------------------------------|
 | `Alt` `/`       | 唤醒 telescope 自定义查询       |
@@ -326,6 +354,9 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 | `SPACE` `h` `m` | 查询痕迹历史(就是编辑时留下的痕迹) |
 
 ### 功能窗口
+
+![功能窗口](https://xiyou-oss.oss-cn-shanghai.aliyuncs.com/nvim_0/img/功能窗口.gif)
+
 | 快捷键      | 行为                          |
 |-------------|-------------------------------|
 | `Alt` + \`  | 文件浏览窗口                  |
@@ -334,6 +365,9 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 | `Alt` + `t` | 文件内部导航(函数导航)        |
 
 ### 编辑模式
+
+![编辑模式](https://xiyou-oss.oss-cn-shanghai.aliyuncs.com/nvim_0/img/编辑模式.gif)
+
 | 快捷键          | 行为                         |
 |-----------------|------------------------------|
 | `SPACE` `i` `s` | 开启当前 buffer 的 snip 定义 |
@@ -345,6 +379,8 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 + `Startify` 入口名字是我 `HWH VIM` 你得改成你自己 或者删掉
 + 位置在 `init/init-better-defaults.vim` 下的 `let g:startify_custom_header`
 
+![visual-multi](https://xiyou-oss.oss-cn-shanghai.aliyuncs.com/nvim_0/img/visual-multi.gif)
+
 | 快捷键              | 行为                                                                                                                 |
 |---------------------|----------------------------------------------------------------------------------------------------------------------|
 | `s` `t` `t`         | 入口面板 [Startify](https://github.com/mhinz/vim-startify)                                                           |
@@ -355,10 +391,13 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 | `m` `t`             | 对某一行打上标签 [vim-bookmarks](https://github.com/MattesGroeger/vim-bookmarks) , `=` 下一标签, `-` 上一标签        |
 
 #### 一些好用的自定义功能
+
+![锚点](https://xiyou-oss.oss-cn-shanghai.aliyuncs.com/nvim_0/img/锚点.gif)
+
 | 快捷键          | 行为                                                                             |
 |-----------------|----------------------------------------------------------------------------------|
 | `SPACE` `x` `y` | 简单运行当前 buffer (主流语言基本上都支持 没有的话改下 `plugin/program-run.vim`) |
-| `j` `j`         | 下一个锚点 <++> 就是锚点 你也可以写成 <+锚点+>                                   |
+| `j` `j`         | 下一个锚点 aaa 就是锚点 你也可以写成 bbb                                   |
 | `k` `k`         | 上一个锚点                                                                       |
 
 #### 主题与外观
@@ -379,7 +418,7 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 
 ## 写在最后
 
-暂时就写这么点，`Vim` 大佬有很多，有兴趣的可以看这个配置, 我也是跟这个神仙学的: [theniceboy](https://github.com/theniceboy)。 `Neovim` 发展的很快，2022年年底左右 `lua plugin` 已经有人实现了自动化安装，不知不觉也已经有了 `go client` 了。随着社区的壮大，功能也在不断迭代，随着使用和学习的深入有更多的功能用法等你去发现!
+暂时就写这么点，`Vim` 大佬有很多，有兴趣的可以看这个配置, 我也是跟这个神仙学的: [theniceboy](https://github.com/theniceboy/nvim)。 `Neovim` 发展的很快，2022年年底左右 `lua plugin` 已经有人实现了自动化安装，不知不觉也已经有了 `go client` 了。随着社区的壮大，功能也在不断迭代，随着使用和学习的深入有更多的功能用法等你去发现!
 
 喜欢学习技术的小伙伴可以访问我的博客，博客地址：[http://mkdocs.grft.top](http://mkdocs.grft.top)
 
