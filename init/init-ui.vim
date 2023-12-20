@@ -80,14 +80,14 @@ augroup END
 " === Custom Fix
 " ===
 augroup theme_customization_fix
-  highlight VertSplit gui=none guibg=none cterm=none ctermbg=none ctermfg=none
-  highlight Normal gui=none guibg=none ctermbg=none
-  highlight Visual guibg=#ABB2BF ctermbg=146 ctermfg=7
-  highlight Pmenu guibg=none cterm=none ctermbg=none ctermfg=13
-  highlight ColorColumn guibg=#ABB2BF ctermbg=4
-  highlight LineNr guibg=none ctermbg=none
-  highlight EndOfBuffer guibg=none ctermbg=none
-  highlight SignColumn guibg=none ctermbg=68
+  " highlight VertSplit gui=none guibg=none cterm=none ctermbg=none ctermfg=none
+  " highlight Normal gui=none guibg=none ctermbg=none
+  " highlight Visual guibg=#ABB2BF ctermbg=146 ctermfg=7
+  " highlight Pmenu guibg=none cterm=none ctermbg=none ctermfg=13
+  " highlight ColorColumn guibg=#ABB2BF ctermbg=4
+  " highlight LineNr guibg=none ctermbg=none
+  " highlight EndOfBuffer guibg=none ctermbg=none
+  " highlight SignColumn guibg=none ctermbg=68
 
   " java
   " highlight javaStorageClass ctermfg=4  guifg=#C678DD

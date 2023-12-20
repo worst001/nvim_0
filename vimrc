@@ -88,10 +88,10 @@ augroup END
 
 " 插件包引入(vim-plug)
 :source $HOME/.vim/init/init-packages.vim
-" UI 配置(TODO: 必须跟在package后 否则ui配置不生效)
-:source $HOME/.vim/init/init-ui.vim
 " Lua插件包引入(packer)
 :source $HOME/.vim/init/init-packer.vim
+" UI 配置(TODO: 必须跟在package后 否则ui配置不生效)
+:source $HOME/.vim/init/init-ui.vim
 " 插件配置
 :source $HOME/.vim/init/init-better-defaults.vim
 " 按键映射
