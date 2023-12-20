@@ -15,7 +15,6 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'rafi/awesome-vim-colorschemes'
 " Plug 'NLKNguyen/papercolor-theme'
 Plug 'phanviet/vim-monokai-pro'
-" Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 Plug 'nvim-lualine/lualine.nvim'
 
 " 文件导航

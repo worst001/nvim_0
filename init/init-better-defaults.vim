@@ -290,27 +290,27 @@ autocmd VimEnter,DirChanged * silent! call UpdateTmuxPwd()
   let g:goyo_width = 130
   let g:goyo_height = 100
 
-  function! s:goyo_enter()
-    let &t_ut=''
-    set expandtab
-    set smarttab
-    set autoindent
-    set number
-    set relativenumber
-  endfunction
-
-  function! s:goyo_leave()
-    let &t_ut=''
-    set expandtab
-    set smarttab
-    set autoindent
-    set number
-    set relativenumber
-    source $HOME/.vim/init/init-ui.vim
-  endfunction
-
-  autocmd! User GoyoEnter nested call <SID>goyo_enter()
-  autocmd! User GoyoLeave nested call <SID>goyo_leave()
+  " function! s:goyo_enter()
+  "   let &t_ut=''
+  "   set expandtab
+  "   set smarttab
+  "   set autoindent
+  "   set number
+  "   set relativenumber
+  " endfunction
+  "
+  " function! s:goyo_leave()
+  "   let &t_ut=''
+  "   set expandtab
+  "   set smarttab
+  "   set autoindent
+  "   set number
+  "   set relativenumber
+  "   source $HOME/.vim/init/init-ui.vim
+  " endfunction
+  "
+  " autocmd! User GoyoEnter nested call <SID>goyo_enter()
+  " autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 
   " ===

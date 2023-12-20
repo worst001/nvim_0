@@ -57,12 +57,6 @@ augroup theme_customization
   " colorscheme solarized
 augroup END
 
-" ===
-" === 通过lua配置theme
-" ===
-let g:catppuccin_flavour = 'macchiato' " latte, frappe, macchiato, mocha
-
-colorscheme catppuccin
 
 " ===
 " === Airline

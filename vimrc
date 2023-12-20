@@ -60,7 +60,7 @@
 :syntax on
 :let g:python_host_prog  = '/usr/local/bin/python2'
 :let g:python3_host_prog = '/opt/homebrew/opt/python@3.10/bin/python3.10'
-:let g:ruby_host_prog    = '/opt/homebrew/lib/ruby/gems/3.1.0/bin/neovim-ruby-host'
+" :let g:ruby_host_prog    = '/opt/homebrew/lib/ruby/gems/3.1.0/bin/neovim-ruby-host'
 
 
 
