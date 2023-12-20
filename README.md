@@ -205,7 +205,7 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 
 ### 环境设置
 
-![环境设置](https://xiyou-oss.oss-cn-shanghai.aliyuncs.com/nvim_0/img/环境设置.gif)
+![环境设置](img/环境设置.gif)
 
 | 快捷键          | 行为                 |
 |-----------------|----------------------|
@@ -219,7 +219,7 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 
 ## 基础按键
 
-![基础按键](https://xiyou-oss.oss-cn-shanghai.aliyuncs.com/nvim_0/img/基础按键.gif)
+![基础按键](img/基础按键.gif)
 
 | 快捷键                            | 行为              |
 |-----------------------------------|-------------------|
