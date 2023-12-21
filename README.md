@@ -73,7 +73,7 @@
 <!-- 关于项目 -->
 ## 关于项目
 
-[![产品名称屏幕截图][product-screenshot]](https://example.com)
+[![产品名称屏幕截图][Startify.png]](https://github.com/worst001/nvim_0)
 
 主要使用 [coc.nvim](https://github.com/neoclide/coc.nvim) 实现代码补全，配置了 `NeoVim` 所需要基本功能，为了层次清晰定义了`6个模块`。
 
