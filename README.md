@@ -73,7 +73,7 @@
 <!-- 关于项目 -->
 ## 关于项目
 
-[![产品名称屏幕截图][Startify.png]](https://github.com/worst001/nvim_0)
+[![产品名称屏幕截图][Startify-pic]](https://github.com/worst001/nvim_0)
 
 主要使用 [coc.nvim](https://github.com/neoclide/coc.nvim) 实现代码补全，配置了 `NeoVim` 所需要基本功能，为了层次清晰定义了`6个模块`。
 
@@ -578,6 +578,6 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 [license-shield]: https://img.shields.io/github/license/worst001/nvim_0.svg?style=flat-square
 [license-url]: https://github.com/worst001/nvim_0/blob/main/LICENSE.txt
 
-[product-screenshot]: images/screenshot.png
+[Startify-pic]: Startify.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [JQuery-url]: https://jquery.com
