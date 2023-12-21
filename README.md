@@ -1,5 +1,22 @@
-<!-- PROJECT SHIELDS -->
+<!-- 回到顶部链接兼容性优化，请查看：https://github.com/othneildrew/Best-README-Template/pull/73 -->
+<a name="readme-top"></a>
+<!--
+*** 感谢您查看这个最佳README模板。如果您有任何建议
+*** 能够使它变得更好，请Fork该仓库并创建一个Pull Request
+*** 或者直接提一个带有 "enhancement" 标签的Issue。
+*** 不要忘了给项目加星哦！
+*** 再次感谢您！现在去创造一些令人惊叹的东西吧！:D
+-->
 
+
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -7,49 +24,62 @@
 [![MIT License][license-shield]][license-url]
 <!-- [![LinkedIn][linkedin-shield]][linkedin-url] -->
 
-<!-- PROJECT LOGO -->
 
-# 完整的 nvim 配置
+<!-- 项目LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/worst001/nvim_0">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-<!-- TOC -->
-* [基本信息](#基本信息)
-  - [初始化的时候分了5个模块在init分别为](#初始化的时候分了6个模块在init分别为)
-  - [插件包分为Plug包_自定义包_Lua包](#插件包分为Plug包_自定义包_Lua包)
-  - [基本配置与按键](#基本配置与按键)
-* [如何安装](#如何安装)
-  - [需要注意的](#需要注意的)
-* [目录结构](#目录结构)
-  - [环境设置](#环境设置)
-* [基础按键](#基础按键)
-  - [窗口按键](#窗口按键)
-  - [标签按键](#标签按键)
-  - [快速进入区域内部](#快速进入区域内部)
-  - [内部终端](#内部终端)
-  - [界面展示设置](#界面展示设置)
-  - [索引与查询](#索引与查询)
-    + [grep](#grep)
-    + [file_buffer](#file_buffer)
-    + [command](#command)
-    + [history](#history)
-  - [功能窗口](#功能窗口)
-  - [编辑模式](#编辑模式)
-* [一些好用的插件](#一些好用的插件)
-  - [一些好用的自定义功能](#一些好用的自定义功能)
-  - [主题与外观](#主题与外观)
-  - [Packer插件](#Packer插件)
-  - [自定义插件与调试](#自定义插件与调试)
-* [写在最后](#写在最后)
-  - [参考资料](#参考资料)
-  - [博客地址](#博客地址)
- <!-- /TOC -->
+  <h3 align="center">完整 nvim 配置指南</h3>
 
-## 基本信息
+  <p align="center">
+    自用 nvim 配置，涵盖所有主流插件和功能
+    <br />
+    <a href="https://github.com/worst001/nvim_0"><strong>探索文档 »</strong></a>
+    <br />
+  </p>
+</div>
+
+
+<!-- 目录 -->
+<details>
+  <summary>目录</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">关于项目</a>
+      <ul>
+        <li><a href="#built-with">构建于</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">开始使用</a>
+      <ul>
+        <li><a href="#prerequisites">前提条件</a></li>
+        <li><a href="#installation">安装</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">使用</a></li>
+    <li><a href="#roadmap">路线图</a></li>
+    <li><a href="#contributing">贡献</a></li>
+    <li><a href="#license">许可证</a></li>
+    <li><a href="#contact">联系方式</a></li>
+    <li><a href="#acknowledgments">鸣谢</a></li>
+  </ol>
+</details>
+
+
+<!-- 关于项目 -->
+## 关于项目
+
+[![产品名称屏幕截图][product-screenshot]](https://example.com)
 
 主要使用 [coc.nvim](https://github.com/neoclide/coc.nvim) 实现代码补全，配置了 `NeoVim` 所需要基本功能，为了层次清晰定义了`6个模块`。
 
-插件涵盖所有主流编辑功能，部署完后只要环境允许可以开发各类语言，供学习用当然开发也是没有问题的
+插件涵盖`所有主流编辑功能`，部署完后只要环境允许`可以开发任何语言`，供学习用当然开发也是没有问题的
 
-`这个是几年前的配置方案，仅供参考`，现在有很多新的插件，`Neovim` 不断的在迭代，不可能停滞不前。
+`这个是几年前的配置方案，仅供参考`，现在有很多新的插件，`Neovim` 不断的在迭代，`不可能停滞不前`。
 
 
 #### 初始化的时候分了6个模块在init分别为
@@ -74,89 +104,47 @@
 + 按键配置都放在 `init-keybindings.vim` 不需要就注释掉
     + 主要还是个人习惯 不爽就改成你的
 
-## 如何安装
+<p align="right">(<a href="#readme-top">回到顶部</a>)</p>
 
-+ `Neovim` 默认环境路径是用户目录下的 `.vim`
-+ `Neovim` 默认使用 `init.vim` 替换原来的 `vimrc`
-+ 因为习惯了 `vim` 的 `vimrc` 这里新建了 `vimrc` 文件然后做了软链接
 
-1. 先安装 [Neovim](https://github.com/neovim/neovim/releases)
-+ 安装完后以 `Linux`/`Mac` 为例其配置目录默认为 `~/.config/nvim`
+### 构建于
 
-2. 设置配置目录 安装插件管理
-+ 创建软链接 这里为了和原生 `Vim` 统一对路径做了些处理
-+ 根据自身环境情况可可自行定义路径
+1. 只要保证 `Neovim` 在 `7.0` 以上，功能还是相对比较全的。
+* [![Neovim][Neovim-pic]][Neovim-url]
 
-```bash
-# home
-cd ~
+2. 所以在安装前先运行 `:checkhealth` 确保`python`、`nodejs`、`ruby`这些环境都在。
+理论上大部分程序环境你都需要装，比如:
+* [![ruby][ruby-pic]][ruby-url]: 提供内置终端界面就是调用`ruby`的`api`实现的
+* [![node][node-pic]][node-url]: `coc`根本离不开它，前端大哥没有他要哭的
+* [![python][python-pic]][python-url]: 有很多使用 `python` 写的插件比如`ranger`、`Ultisnips`
+* [![clang][clang-pic]][clang-url]: `Linux`/`Mac` 的爸爸，爸爸你敢不要吗
+* [![golang][golang-pic]][golang-url]: 很多优质终端界面都是用 `go` 写的比如 `FZF`、`lazygit`
+* [![java][java-pic]][java-url]: 这个也不可能没有吧 微服务扛把子
+* [![lua][lua-pic]][lua-url]: `packer`插件必备 现在很多插件都用lua改写了
 
-# clone
-git clone git@github.com:worst001/nvim_0.git .vim
+3. 此外你的终端环境需要有:
+* [![fzf][fzf-pic]](https://github.com/junegunn/fzf)
+* [![ag][ag-pic]](https://github.com/ggreer/the_silver_searcher)
+* [![rg][rg-pic]](https://github.com/BurntSushi/ripgrep)
 
-# nvim 配置链接为 .vim
-ln -sf  ~/.vim ~/.config/nvim
+4. 可能还需要终端图标字体:
+* [![DroidSansMono Nerd Font][Font-pic]][Font-url]
 
-# vimrc 软链为 init.vim
-ln -sf  ~/.vim/vimrc ~/.vim/init.vim
+> 可能不止这些，新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你就要慢慢调试了[`摊手`]
 
-# 先要安装 vim plug
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+<p align="right">(<a href="#readme-top">回到顶部</a>)</p>
 
-# 还需要安装 packer
-git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
+<!-- 开始使用 -->
+## 开始使用
+
+这是一个如何在本地安装和使用 `Nvim_0` 的指南。
+要在本地运行起来，请按照这些简单的示例步骤操作。
+
+以下是 `Nvim_0` 的目录结构:
 ```
-
-3. 进入`Neovim`, 检查环境并安装插件
-```vim
-# 第一次进入因为没有插件会报错不用管
-
-# 检查环境 保证各类语言的客户端能够对接到 Neovim
-:checkhealth
-
-# 安装 Plug 插件
-:PlugInstall
-
-# 安装 Packer 插件
-:PackerSync
-
-```
-
-4. 显示 `Startify 界面` 表示安装成功
-
-![Startify](Startify.png)
-
-+ `Startify` 页面用的是自己的名字 `HWH VIM`
-+ 可以使用 [figlet](https://github.com/cmatsuoka/figlet) 自行修改主界面名称(注意转义字符)
-
-
-### 需要注意的
-用的`Neovim`在`7.0`以上，功能还是相对比较全的。所以在安装前先运行 `:checkhealth` 确保`python`、`nodejs`、`ruby`这些环境都在。
-理论上大部分程序环境你都需要装，比如
-
-+ `ruby`: 提供内置终端界面
-+ `node`: `coc`补全插件根本离不开它
-+ `python`: 一些使用`python`的插件比如`ranger`, 还有强大的`Ultisnips`
-+ `clang`: 不管是`Mac`还是`Linux`这个必备
-+ `golang`: 底层插件`FZF`就是用`go`写的，你说要不要
-+ `java`: 这个也不可能没有吧
-+ `lua`: `packer`插件必备
-+ 此外你的终端环境需要有 [fzf](https://github.com/junegunn/fzf)、 [ag](https://github.com/ggreer/the_silver_searcher)、 [rg](https://github.com/BurntSushi/ripgrep) 等插件，最好配上 [tmux](https://github.com/tmux/tmux)
-
-因为年代有点久了，心血来潮就这么发上来了，有一些命令可能没有
-
-PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你就要慢慢调试了[`摊手`]
-
-
-## 目录结构
-```
-.vim
-├── README.md
+.
 ├── autoload
-│   ├── dbext.vim.bak
-│   ├── dbext_dbi.vim.bak
 │   ├── plug.vim
 │   └── plug.vim.old
 ├── coc-settings.json
@@ -168,40 +156,122 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 │   ├── init-keybindings.vim
 │   ├── init-packages.vim
 │   ├── init-packer.vim
-│   ├── init-ui.vim
-│   └── new
-├── init.vim -> /Users/hanwenhao/.vim/vimrc
+│   └── init-ui.vim
+├── init.vim
 ├── lua
 │   ├── plugin-config
-│   │   ├── bufferline.lua
-│   │   ├── nvim-tree.lua
-│   │   ├── persisted.lua
-│   │   ├── telescope.lua
-│   │   └── todo-comments.lua
 │   └── plugins.lua
 ├── pack
-│   └── vimspector
-│       └── opt
 ├── package-lock.json
 ├── plugged
 ├── plugin
-│   ├── terminal-open.vim
-│   ├── text-highlight.vim
-│   └── vimcdoc.vim
 ├── sessions
 │   └── default.vim
 ├── shell
-│   ├── prettier
-│   ├── scalafix
-│   ├── time
-│   ├── uncrustify
-│   ├── xml-prettier
-│   └── xml2js
-├── syntax
-│   └── help_cn.vim
-├── tree.txt
-└── vimrc
+└── syntax
+    └── help_cn.vim
 ```
+
+
+### 前提条件
+
+1. 先安装 [Neovim](https://github.com/neovim/neovim/releases)
++ 安装完后以 `Linux`/`Mac` 为例其配置目录默认为 `~/.config/nvim`
++ `Windows` 用户请参考 `Neovim` 官方文档
+
+2. `Neovim` 相关的 `client`
+```bash
+npm install -g neovim
+
+pip install pynvim
+
+gem install neovim
+
+```
+
+### 安装
+
+现在可以开始安装了
++ 根据官方文档，`Neovim` 配置路径位于 `~/.config` 下(`Windows` 环境请查阅相关文档)
++ 事实上这就是个 `Neovim` 配置而已, 所以安装起来非常容易
+
+1. 找到配置目录克隆仓库
+   ```sh
+   cd ~/.config
+   
+   git clone git@github.com:worst001/nvim_0.git nvim
+   ```
+
+2. 设置客户端和插件包镜像
+
+   ```sh
+   # 用原生`Vim`打开主配置文件
+   /usr/bin/vim ~/.config/nvim/init.vim
+   ```
+
+   ```vim
+   " 设置客户端Client
+   :let g:python_host_prog  = '/usr/local/bin/python2'
+   :let g:python3_host_prog = '/opt/homebrew/opt/python@3.10/bin/python3.10'
+   :let g:ruby_host_prog    = '/opt/homebrew/lib/ruby/gems/3.1.0/bin/neovim-ruby-host'
+
+
+   " 插件镜像地址修改(Github连不上 可以找国内Github镜像)
+   :let g:plug_url_format   = 'https://git::@github.com.cnpmjs.org/%s.git'
+   ```
+
+3. 安装包管理插件
+   ```sh
+    # 安装 vim plug
+    sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+           https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+    # 安装 packer
+    git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+   ```
+
+4. 检查环境安装插件
+   ```vim
+   # 第一次进入因为没有插件会报错不用管
+   
+   # 检查环境 保证各类语言的客户端能够对接到 Neovim
+   :checkhealth
+   
+   # 安装 Plug 插件
+   :PlugInstall
+   
+   # 安装 Packer 插件
+   :PackerSync
+   
+   ```
+
+<p align="right">(<a href="#readme-top">回到顶部</a>)</p>
+
+
+<!-- 用法 -->
+## 用法
+
+<!-- TOC -->
+* [环境设置](#环境设置)
+* [基础按键](#基础按键)
+* [窗口按键](#窗口按键)
+* [标签按键](#标签按键)
+* [快速进入区域内部](#快速进入区域内部)
+* [内部终端](#内部终端)
+* [界面展示设置](#界面展示设置)
+* [索引与查询](#索引与查询)
+    - [grep](#grep)
+    - [file_buffer](#file_buffer)
+    - [command](#command)
+    - [history](#history)
+* [功能窗口](#功能窗口)
+* [编辑模式](#编辑模式)
+* [一些好用的插件](#一些好用的插件)
+* [自定义功能](#自定义功能)
+* [主题与外观](#主题与外观)
+* [Packer插件](#Packer插件)
+* [自定义插件与调试](#自定义插件与调试)
+ <!-- /TOC -->
 
 ### 环境设置
 
@@ -217,7 +287,7 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 | `SPACE` `s` `x` | 配置文件立即生效     |
 
 
-## 基础按键
+### 基础按键
 
 ![基础按键](img/基础按键.gif)
 
@@ -379,7 +449,7 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 | `SPACE` `i` `s` | 开启当前 buffer 的 snip 定义 |
 | `SPACE` `i` `t` | 开启 Markdown 的 Table Mode  |
 
-## 一些好用的插件
+### 一些好用的插件
 + 以下只给核心功能绑定按键 其他功能可自行查看 `init-keybidings.vim` 文件
 + `Git` 方面建议使用内部终端打开 [lazygit](https://github.com/jesseduffield/lazygit), 这里给出以前的 `fugitive` 按键供参考
 + `Startify` 入口名字是我 `HWH VIM` 你得改成你自己 或者删掉
@@ -396,7 +466,7 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 | `Ctrl` + `h`        | 开启关键字批量选择 [Multiple Cursor](https://github.com/mg979/vim-visual-multi),  `n` 下一个匹配, `Q` 返回上一个匹配 |
 | `m` `t`             | 对某一行打上标签 [vim-bookmarks](https://github.com/MattesGroeger/vim-bookmarks) , `=` 下一标签, `-` 上一标签        |
 
-#### 一些好用的自定义功能
+### 自定义功能
 
 ![锚点](img/锚点.gif)
 
@@ -406,29 +476,79 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 | `j` `j`         | 下一个锚点 <++> 就是锚点 你也可以写成 <+锚点+>                                   |
 | `k` `k`         | 上一个锚点                                                                       |
 
-#### 主题与外观
+### 主题与外观
 
 + 主题与ui参数在 `init/init-ui.vim` 下, 可根据喜好设置
 + 为了好看我配合Iterm设置成了半透明 如果不需要可以注释 `augroup theme_customization_fix` 块
 
-#### Packer插件
+### Packer插件
 
 + 其他`Packer`插件配置都在`lua/plugin-config`下，因为`neovim`本身一直在不断更新，
 + 如果找到更好的`Packer`插件，注释掉原有的，新的配置放`lua/plugin-config`下即可
 
-#### 自定义插件与调试
+### 自定义插件与调试
 
 + 自定义插件`plugin`需要调用的脚本时统一放在`shell`目录, 有兴趣的小伙伴可以实现更为复杂的功能, 特别优秀的话就打包开源发布吧
 + `VimSpector` 很久没用了，因为目前我调试时用的是 `Intellij` 全家桶, 如果需要可以查看[VimSpector](https://github.com/puremourning/vimspector)，快捷键保证不和 `F2` `F3` 冲突即可
 
+<p align="right">(<a href="#readme-top">返回顶部</a>)</p>
 
-## 写在最后
+
+<!-- 路线图 -->
+
+## 路线图
+- [x] 基础功能与目录结构
+- [x] 基本信息与设计目的
+- [x] 安装方式与环境组件
+- [x] 给出用法与按键表
+- [ ] 第三方插件补充与完善
+- [ ] 徽章与Logo完善
+
+
+See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+
+<p align="right">(<a href="#readme-top">返回顶部</a>)</p>
+
+
+
+<!-- 贡献 -->
+
+## 贡献
+
+贡献是使开源社区成为一个如此令人惊叹的地方，以学习、激励和创造。您所做的任何贡献都将非常感谢。
+
+如果您对使这个项目变得更好有建议，请 fork 该仓库并创建 pull request。您也可以打开一个带有“enhancement”标签的问题。不要忘记给这个项目点个星！再次感谢！
+
+<p align="right">(<a href="#readme-top">返回顶部</a>)</p>
+
+
+
+<!-- 许可证 -->
+## 许可证
+
+根据 MIT 许可证进行分发。更多信息请参见 [LICENSE.txt](LICENSE.txt)。
+
+<p align="right">(<a href="#readme-top">返回顶部</a>)</p>
+
+
+
+<!-- 联系方式 -->
+## 联系方式
+
+博客地址: [http://mkdocs.grft.top](http://mkdocs.grft.top)
+
+项目链接: [https://github.com/worst001/nvim_0](https://github.com/worst001/nvim_0)
+
+如果有帮到你就到博客请我喝杯咖啡吧，我真的很爱喝！
+
+
+<p align="right">(<a href="#readme-top">返回顶部</a>)</p>
+
+
+<!-- 参考与鸣谢 -->
+## 参考与鸣谢
 
 暂时就写这么点，`Vim` 大佬有很多，有兴趣的可以看这个配置, 我也是跟这个神仙学的: [theniceboy](https://github.com/theniceboy/nvim)。 `Neovim` 发展的很快，2022年年底左右 `lua plugin` 已经有人实现了自动化安装，不知不觉也已经有了 `go client` 了。随着社区的壮大，功能也在不断迭代，随着使用和学习的深入有更多的功能用法等你去发现!
-
-喜欢学习技术的小伙伴可以访问我的博客，博客地址：[http://mkdocs.grft.top](http://mkdocs.grft.top)
-
-## 参考资料
 
 [https://github.com/theniceboy/nvim](https://github.com/theniceboy/nvim)
 
@@ -439,6 +559,12 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 [https://github.com/rockerBOO/awesome-neovim](https://github.com/rockerBOO/awesome-neovim)
 
 
+<p align="right">(<a href="#readme-top">返回顶部</a>)</p>
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 <!-- links -->
 [your-project-path]:shaojintian/Best_README_template
 [contributors-shield]: https://img.shields.io/github/contributors/worst001/nvim_0.svg?style=flat-square
@@ -451,3 +577,7 @@ PS: 新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你
 [issues-url]: https://img.shields.io/github/issues/worst001/nvim_0.svg
 [license-shield]: https://img.shields.io/github/license/worst001/nvim_0.svg?style=flat-square
 [license-url]: https://github.com/worst001/nvim_0/blob/main/LICENSE.txt
+
+[product-screenshot]: images/screenshot.png
+[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[JQuery-url]: https://jquery.com

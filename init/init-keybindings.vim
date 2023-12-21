@@ -2,11 +2,11 @@
 :let mapleader="\<Space>"
 
   " 环境配置
-:nnoremap <F2>            :edit $HOME/.vim/vimrc<cr>
+:nnoremap <F2>            :edit $HOME/.config/nvim/init.vim<cr>
 :nnoremap <leader><F1>    :edit $HOME/.zsh_history<cr>
-:nnoremap <leader><F2>    :edit $HOME/.vim/init/init-packages.vim<cr>
-:nnoremap <leader><F3>    :edit $HOME/.vim/lua/plugins.lua<cr>
-:nnoremap <leader><F4>    :edit $HOME/.vim/init/init-packer.vim<cr>
+:nnoremap <leader><F2>    :edit $HOME/.config/nvim/init/init-packages.vim<cr>
+:nnoremap <leader><F3>    :edit $HOME/.config/nvim/lua/plugins.lua<cr>
+:nnoremap <leader><F4>    :edit $HOME/.config/nvim/init/init-packer.vim<cr>
 :nnoremap <leader>sx      :source %<cr>
 " :nnoremap <silent> t.     :cd %:p:h<CR>:NERDTree<cr>
 :nnoremap <silent>cd      :cd %:p:h<CR>
