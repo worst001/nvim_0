@@ -130,7 +130,7 @@
 4. 可能还需要终端图标字体:
 * [![DroidSansMono Nerd Font][Font-pic]][Font-url]
 
-> 可能不止这些，新版已经支持`go-client`了，如果`:checkhealth`没有通过的话你就要慢慢调试了[`摊手`]
+> 可能不止这些，新版已经支持`go-client`了
 
 <p align="right">(<a href="#readme-top">回到顶部</a>)</p>
 
