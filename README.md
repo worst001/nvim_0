@@ -273,8 +273,6 @@ gem install neovim
 
 ### 环境设置
 
-![环境设置](img/环境设置.gif)
-
 | 快捷键          | 行为                 |
 |-----------------|----------------------|
 | `F2`            | 进入主配置文件       |
@@ -284,10 +282,10 @@ gem install neovim
 | `SPACE` `F4`    | Packer插件自定义设置 |
 | `SPACE` `s` `x` | 配置文件立即生效     |
 
+![环境设置](img/环境设置.gif)
+
 
 ### 基础按键
-
-![基础按键](img/基础按键.gif)
 
 | 快捷键                            | 行为              |
 |-----------------------------------|-------------------|
@@ -302,10 +300,10 @@ gem install neovim
 | `SPACE` `d` `s`                   | 删除swap缓存      |
 | `SPACE` `y`                       | 粘贴板历史        |
 
+![基础按键](img/基础按键.gif)
+
 
 ### 窗口按键
-
-![窗口按键](img/窗口按键.gif)
 
 | 快捷键                           | 行为                  |
 |----------------------------------|-----------------------|
@@ -318,10 +316,10 @@ gem install neovim
 | `Alt` `k`/`j`/`l`/`h`            | 切换窗口              |
 | `Alt` `Up`/`Down`/`Left`/`Right` | 改变窗口大小          |
 
+![窗口按键](img/窗口按键.gif)
+
 
 ### 标签按键
-
-![标签按键](img/标签按键.gif)
 
 | 快捷键             | 行为                                         |
 |--------------------|----------------------------------------------|
@@ -332,11 +330,11 @@ gem install neovim
 | `Shift` + `Tab`    | 切换到上一个buffer                           |
 | `Space` `Tab`      | 删除当前buffer                               |
 
+![标签按键](img/标签按键.gif)
+
 ### 快速进入区域内部
 + 配合 `AutoPairs` 可以对各种块添加删除括号 这里给出老方案做参考
 + `AutoPairs` 自行查询文档 按键不冲突
-
-![快速进入区域内部](img/快速进入区域内部.gif)
 
 | 快捷键                 | 行为                                                            |
 |------------------------|-----------------------------------------------------------------|
@@ -349,13 +347,13 @@ gem install neovim
 | <operator> `i` \`      | 进入\`\`内部执行<operator>  这里\是转义字符`防止和Markdown冲突` |
 | <visual> `Shift` + `s` | 使用 AutoPairs 对<visual>块添加某种括号                         |
 
+![快速进入区域内部](img/快速进入区域内部.gif)
+
 
 ### 内部终端
 + 使用的是 [vim-floaterm](https://github.com/voldikss/vim-floaterm) 内部终端的好处在于可以绑定快捷键 而且目录位于当前文件下
 + 坏处在于内部终端执行时是和当前 `nvim` 同步的 当前 `nvim` 关闭终端命令会中断
 + 批量命令的话还是建议使用外部终端 或者配合 `tmux`
-
-![内部终端](img/内部终端.gif)
 
 | 快捷键      | 行为                                                               |
 |-------------|--------------------------------------------------------------------|
@@ -366,9 +364,9 @@ gem install neovim
 | `Alt` + `x` | 关闭终端标签                                                       |
 | `Esc` `d`   | 查看文件大小(其实就是 du -sh * \| sort -rh<cr>) 根据需要可自行定义 |
 
-### 界面展示设置
+![内部终端](img/内部终端.gif)
 
-![界面展示设置](img/界面展示设置.gif)
+### 界面展示设置
 
 | 快捷键          | 行为               |
 |-----------------|--------------------|
@@ -380,11 +378,11 @@ gem install neovim
 | `SPACE` `l` `y` | 开启/关闭 Zen 模式 |
 | `SPACE` `l` `p` | 开启/关闭 拼写检查 |
 
+![界面展示设置](img/界面展示设置.gif)
+
 ### 索引与查询
 
 #### grep
-
-![grep](img/索引与查询grep.gif)
 
 | 快捷键          | 行为                     |
 |-----------------|--------------------------|
@@ -393,23 +391,23 @@ gem install neovim
 | `SPACE` `/` `/` | 所有buffer关键字查询     |
 | `SPACE` `/` `g` | 当前目录下递归查询关键字 |
 
+![grep](img/索引与查询grep.gif)
+
 #### file_buffer
+
+| 快捷键          | 行为                                |
+|-----------------|-------------------------------------|
+| `Alt` `/`       | 唤醒 telescope 自定义查询           |
+| `Alt` `f`       | 唤醒 fzf 查询当前目录下的文件       |
+| `SPACE` `f` `b` | 查询 buffer                         |
+| `SPACE` `f` `w` | 查询 window                         |
+| `SPACE` `f` `f` | 以当前 buffer 的 git 根目录进行查询 |
+| `SPACE` `f` `s` | 查看最近的 session                  |
+| `SPACE` `f` `k` | 查询快捷键                          |
 
 ![file_buffer](img/索引与查询file_buffer.gif)
 
-| 快捷键          | 行为                            |
-|-----------------|---------------------------------|
-| `Alt` `/`       | 唤醒 telescope 自定义查询       |
-| `Alt` `f`       | 查询当前目录下的文件            |
-| `SPACE` `f` `b` | 查询buffer                      |
-| `SPACE` `f` `w` | 查询window                      |
-| `SPACE` `f` `f` | 以当前buffer的git根目录进行查询 |
-| `SPACE` `f` `s` | 查看最近的session               |
-| `SPACE` `f` `k` | 查询快捷键                      |
-
 #### command
-
-![command](img/索引与查询command.gif)
 
 | 快捷键          | 行为         |
 |-----------------|--------------|
@@ -417,9 +415,9 @@ gem install neovim
 | `SPACE` `j` `j` | 查看coc命令  |
 | `SPACE` `j` `s` | 清除多余空格 |
 
-#### history
+![command](img/索引与查询command.gif)
 
-![history](img/索引与查询history.gif)
+#### history
 
 | 快捷键          | 行为                               |
 |-----------------|------------------------------------|
@@ -427,9 +425,9 @@ gem install neovim
 | `SPACE` `h` `s` | 查询`查询`历史                     |
 | `SPACE` `h` `m` | 查询痕迹历史(就是编辑时留下的痕迹) |
 
-### 功能窗口
+![history](img/索引与查询history.gif)
 
-![功能窗口](img/功能窗口.gif)
+### 功能窗口
 
 | 快捷键      | 行为                          |
 |-------------|-------------------------------|
@@ -438,22 +436,21 @@ gem install neovim
 | `Alt` + `1` | 数据库窗口                    |
 | `Alt` + `t` | 文件内部导航(函数导航)        |
 
-### 编辑模式
+![功能窗口](img/功能窗口.gif)
 
-![编辑模式](img/编辑模式.gif)
+### 编辑模式
 
 | 快捷键          | 行为                         |
 |-----------------|------------------------------|
 | `SPACE` `i` `s` | 开启当前 buffer 的 snip 定义 |
 | `SPACE` `i` `t` | 开启 Markdown 的 Table Mode  |
 
-### 一些好用的插件
-+ 以下只给核心功能绑定按键 其他功能可自行查看 `init-keybidings.vim` 文件
-+ `Git` 方面建议使用内部终端打开 [lazygit](https://github.com/jesseduffield/lazygit), 这里给出以前的 `fugitive` 按键供参考
-+ `Startify` 入口名字是我 `HWH VIM` 你得改成你自己 或者删掉
-+ 位置在 `init/init-better-defaults.vim` 下的 `let g:startify_custom_header`
+![编辑模式](img/编辑模式.gif)
 
-![visual-multi](img/visual-multi.gif)
+### 一些好用的插件
++ 除了之前给出的 `Telescope` 和 `coc.nvim` 外, 还有很多好用的`第三方插件`
++ 之前可能已经给出了一些快捷键这里再提一下
++ 这里给出常用的 很多优秀的插件我也没用过 `以你为准`
 
 | 快捷键              | 行为                                                                                                                 |
 |---------------------|----------------------------------------------------------------------------------------------------------------------|
@@ -463,16 +460,46 @@ gem install neovim
 | `SPACE` `g` `c` `a` | Git 提交 [vim-fugitive](https://github.com/tpope/vim-fugitive)                                                       |
 | `Ctrl` + `h`        | 开启关键字批量选择 [Multiple Cursor](https://github.com/mg979/vim-visual-multi),  `n` 下一个匹配, `Q` 返回上一个匹配 |
 | `m` `t`             | 对某一行打上标签 [vim-bookmarks](https://github.com/MattesGroeger/vim-bookmarks) , `=` 下一标签, `-` 上一标签        |
+| `SPACE` `SPACE` `f` | 快速定位 [vim-easymotion](https://github.com/easymotion/vim-easymotion)                                              |
+
++ `FZF` 快速查询
+    + 属于 `Neovim` 标配了 必须要有的
+    + `Telescope` 底层就是用它
+
+![FZF](img/FZF.gif)
+
++ `switch` 状态切换插件
+
+![switch](img/switch.gif)
+
++ `tabular` 列对齐插件
+
+![switch](img/tabular.gif)
+
++ `visual-multi` 多位选择插件
+
+![visual-multi](img/visual-multi.gif)
+
++ `vim-bookmarks` 标记插件
+
+![bookmarks](img/bookmarks.gif)
+
++ `vim-easymotion` 快速定位
+
+![easymotion](img/easymotion.gif)
+
 
 ### 自定义功能
-
-![锚点](img/锚点.gif)
 
 | 快捷键          | 行为                                                                             |
 |-----------------|----------------------------------------------------------------------------------|
 | `SPACE` `x` `y` | 简单运行当前 buffer (主流语言基本上都支持 没有的话改下 `plugin/program-run.vim`) |
 | `j` `j`         | 下一个锚点 <++> 就是锚点 你也可以写成 <+锚点+>                                   |
 | `k` `k`         | 上一个锚点                                                                       |
+
++ 锚点定位
+
+![锚点](img/锚点.gif)
 
 ### 主题与外观
 
@@ -499,7 +526,7 @@ gem install neovim
 - [x] 基本信息与设计目的
 - [x] 安装方式与环境组件
 - [x] 给出用法与按键表
-- [ ] 第三方插件补充与完善
+- [x] 第三方插件补充与完善
 - [x] 徽章与Logo完善
 
 
