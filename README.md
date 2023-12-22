@@ -109,27 +109,26 @@
 
 ### 构建于
 
-1. 只要保证 `Neovim` 在 `7.0` 以上，功能还是相对比较全的。
+1. 编辑器
 * [![Neovim][Neovim-pic]][Neovim-url]
-2. 所以在安装前先运行 `:checkhealth` 确保`python`、`nodejs`、`ruby`这些环境都在。
-理论上大部分程序环境你都需要装，比如:
-* [![ruby][ruby-pic]][ruby-url]: 提供内置终端界面就是调用`ruby`的`api`实现的
-* [![node][node-pic]][node-url]: `coc`根本离不开它，前端大哥没有他要哭的
-* [![python][python-pic]][python-url]: 有很多使用 `python` 写的插件比如`ranger`、`Ultisnips`
-* [![clang][clang-pic]][clang-url]: `Linux`/`Mac` 的爸爸，爸爸你敢不要吗
-* [![golang][golang-pic]][golang-url]: 很多优质终端界面都是用 `go` 写的比如 `FZF`、`lazygit`
-* [![java][java-pic]][java-url]: 这个也不可能没有吧 微服务扛把子
-* [![lua][lua-pic]][lua-url]: `packer`插件必备 现在很多插件都用lua改写了
 
-3. 此外你的终端环境需要有:
+2. 语言与运行时
+* [![node][node-pic]][node-url]
+* [![ruby][ruby-pic]][ruby-url]
+* [![python][python-pic]][python-url]
+* [![clang][clang-pic]][clang-url]
+* [![golang][golang-pic]][golang-url]
+* [![java][java-pic]][java-url]
+* [![lua][lua-pic]][lua-url]
+
+3. 工具
 * [![fzf][fzf-pic]][fzf-url]
 * [![ag][ag-pic]][ag-url]
 * [![rg][rg-pic]][rg-url]
 
-4. 可能还需要终端图标字体:
+4. 图标字体
 * [![DroidSansMono Nerd Font][Font-pic]][Font-url]
 
-> 可能不止这些，新版已经支持`go-client`了
 
 <p align="right">(<a href="#readme-top">回到顶部</a>)</p>
 
@@ -185,8 +184,8 @@ npm install -g neovim
 pip install pynvim
 
 gem install neovim
-
 ```
+
 
 ### 安装
 

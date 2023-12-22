@@ -1,3 +1,3 @@
 let l:bm_file_version = 1
-let l:bm_sessions = {'default': {'/Users/hanwenhao/.vim/README.md': [{'sign_idx': 9501, 'line_nr': 63, 'content': '    <li><a href="#用法">用法</a></li>'},{'sign_idx': 9500, 'line_nr': 302, 'content': '| `u` `p`                           | 当前单词大写      |'},],}}
+let l:bm_sessions = {'default': {'/Users/hanwenhao/.vim/init/init-keybindings.vim': [{'sign_idx': 9500, 'line_nr': 86, 'content': ':nnoremap <leader>aa   :<c-u>normal!   @a<cr>'},],}}
 let l:bm_current_session = 'default'
