@@ -24,7 +24,6 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 " Plug 'fholgado/minibufexpl.vim'
 Plug 'amix/open_file_under_cursor.vim'
-" Plug 'hardcoreplayers/dashboard-nvim'
 
 " 代码导航
 Plug 'liuchengxu/vista.vim'

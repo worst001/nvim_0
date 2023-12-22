@@ -29,7 +29,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/worst001/nvim_0">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="img/nvim-logo.jpg" alt="Logo" width="640" height="360">
   </a>
 
   <h3 align="center">完整 nvim 配置指南</h3>
@@ -48,24 +48,24 @@
   <summary>目录</summary>
   <ol>
     <li>
-      <a href="#about-the-project">关于项目</a>
+      <a href="#关于项目">关于项目</a>
       <ul>
-        <li><a href="#built-with">构建于</a></li>
+        <li><a href="#构建于">构建于</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">开始使用</a>
+      <a href="#开始使用">开始使用</a>
       <ul>
-        <li><a href="#prerequisites">前提条件</a></li>
-        <li><a href="#installation">安装</a></li>
+        <li><a href="#前提条件">前提条件</a></li>
+        <li><a href="#安装">安装</a></li>
       </ul>
     </li>
-    <li><a href="#usage">使用</a></li>
-    <li><a href="#roadmap">路线图</a></li>
-    <li><a href="#contributing">贡献</a></li>
-    <li><a href="#license">许可证</a></li>
-    <li><a href="#contact">联系方式</a></li>
-    <li><a href="#acknowledgments">鸣谢</a></li>
+    <li><a href="#用法">用法</a></li>
+    <li><a href="#路线图">路线图</a></li>
+    <li><a href="#龚贤">贡献</a></li>
+    <li><a href="#许可证">许可证</a></li>
+    <li><a href="#联系方式">联系方式</a></li>
+    <li><a href="#鸣谢">鸣谢</a></li>
   </ol>
 </details>
 
@@ -73,7 +73,7 @@
 <!-- 关于项目 -->
 ## 关于项目
 
-[![产品名称屏幕截图][Startify-pic]](https://github.com/worst001/nvim_0)
+![产品名称屏幕截图][Startify-pic]
 
 主要使用 [coc.nvim](https://github.com/neoclide/coc.nvim) 实现代码补全，配置了 `NeoVim` 所需要基本功能，为了层次清晰定义了`6个模块`。
 
@@ -198,7 +198,7 @@ gem install neovim
 1. 找到配置目录克隆仓库
    ```sh
    cd ~/.config
-   
+
    git clone git@github.com:worst001/nvim_0.git nvim
    ```
 
@@ -210,7 +210,7 @@ gem install neovim
    ```
 
    ```vim
-   " 设置客户端Client
+   " 设置客户端语言与Client
    :let g:python_host_prog  = '/usr/local/bin/python2'
    :let g:python3_host_prog = '/opt/homebrew/opt/python@3.10/bin/python3.10'
    :let g:ruby_host_prog    = '/opt/homebrew/lib/ruby/gems/3.1.0/bin/neovim-ruby-host'
@@ -233,16 +233,16 @@ gem install neovim
 4. 检查环境安装插件
    ```vim
    # 第一次进入因为没有插件会报错不用管
-   
+
    # 检查环境 保证各类语言的客户端能够对接到 Neovim
    :checkhealth
-   
+
    # 安装 Plug 插件
    :PlugInstall
-   
+
    # 安装 Packer 插件
    :PackerSync
-   
+
    ```
 
 <p align="right">(<a href="#readme-top">回到顶部</a>)</p>
@@ -502,7 +502,7 @@ gem install neovim
 - [x] 安装方式与环境组件
 - [x] 给出用法与按键表
 - [ ] 第三方插件补充与完善
-- [ ] 徽章与Logo完善
+- [x] 徽章与Logo完善
 
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
@@ -545,8 +545,8 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 <p align="right">(<a href="#readme-top">返回顶部</a>)</p>
 
 
-<!-- 参考与鸣谢 -->
-## 参考与鸣谢
+<!-- 鸣谢 -->
+## 鸣谢
 
 暂时就写这么点，`Vim` 大佬有很多，有兴趣的可以看这个配置, 我也是跟这个神仙学的: [theniceboy](https://github.com/theniceboy/nvim)。 `Neovim` 发展的很快，2022年年底左右 `lua plugin` 已经有人实现了自动化安装，不知不觉也已经有了 `go client` 了。随着社区的壮大，功能也在不断迭代，随着使用和学习的深入有更多的功能用法等你去发现!
 
@@ -578,6 +578,18 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 [license-shield]: https://img.shields.io/github/license/worst001/nvim_0.svg?style=flat-square
 [license-url]: https://github.com/worst001/nvim_0/blob/main/LICENSE.txt
 
+
 [Startify-pic]: Startify.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[JQuery-url]: https://jquery.com
+[Neovim-pic]]:https://img.shields.io/badge/editor-neovim-green.svg
+[ruby-pic]: https://img.shields.io/badge/Language-Ruby-red.svg
+[node-pic]: https://img.shields.io/badge/Runtime-Node.js-green.svg
+[python-pic]: https://img.shields.io/badge/Language-Python-blue.svg
+[clang-pic]: https://img.shields.io/badge/Language-C%2B%2B-blue.svg
+[golang-pic]: https://img.shields.io/badge/Language-Go-lightblue.svg
+[java-pic]: https://img.shields.io/badge/Language-Java-orange.svg
+[lua-pic]: https://img.shields.io/badge/Language-Lua-blue.svg
+[fzf-pic]: https://img.shields.io/badge/Tool-fzf-green.svg
+[ag-pic]: https://img.shields.io/badge/Tool-The_Silver_Searcher-blue.svg
+[rg-pic]: https://img.shields.io/badge/Tool-ripgrep-green.svg
+[Font-pic]: https://img.shields.io/badge/Font-DroidSansMono%20Nerd%20Font-blue
+

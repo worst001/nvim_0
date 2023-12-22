@@ -174,17 +174,17 @@
     autocmd TermOpen * :set nonu norelativenumber
   augroup END
 
-" 在 Vim 中设置函数用来更新 Tmux 环境变量
-function! UpdateTmuxPwd()
-    if exists('$TMUX')
-        let pwd = expand('%:p:h')
-        let tmux_cmd = 'tmux setenv -g TMUX_PWD ' . shellescape(pwd)
-        call jobstart(['sh', '-c', tmux_cmd])
-    endif
-endfunction
-
-" 设置自动命令，每次你更改工作目录时更新 Tmux 环境变量
-autocmd VimEnter,DirChanged * silent! call UpdateTmuxPwd()
+" " 在 Vim 中设置函数用来更新 Tmux 环境变量
+" function! UpdateTmuxPwd()
+"     if exists('$TMUX')
+"         let pwd = expand('%:p:h')
+"         let tmux_cmd = 'tmux setenv -g TMUX_PWD ' . shellescape(pwd)
+"         call jobstart(['sh', '-c', tmux_cmd])
+"     endif
+" endfunction
+"
+" " 设置自动命令，每次你更改工作目录时更新 Tmux 环境变量
+" autocmd VimEnter,DirChanged * silent! call UpdateTmuxPwd()
 
 
   " ===
@@ -416,14 +416,11 @@ autocmd VimEnter,DirChanged * silent! call UpdateTmuxPwd()
   let g:startify_change_to_dir = 1
   let g:startify_custom_header =
       \ startify#center([
-      \ "  __  __  __      __  __  __      __  __  ______                ",
-      \ " /\\ \\/\\ \\/\\ \\  __/\\ \\/\\ \\/\\ \\    /\\ \\/\\ \\/\\__  _\\   /'\\_/`\\     ",
-      \ " \\ \\ \\_\\ \\ \\ \\/\\ \\ \\ \\ \\ \\_\\ \\   \\ \\ \\ \\ \\/_/\\ \\/  /\\      \\    ",
-      \ "  \\ \\  _  \\ \\ \\ \\ \\ \\ \\ \\  _  \\   \\ \\ \\ \\ \\ \\ \\ \\  \\ \\ \\__\\ \\   ",
-      \ "   \\ \\ \\ \\ \\ \\ \\_/ \\_\\ \\ \\ \\ \\ \\   \\ \\ \\_/ \\ \\_\\ \\__\\ \\ \\_/\\ \\  ",
-      \ "    \\ \\_\\ \\_\\ `\\___x___/\\ \\_\\ \\_\\   \\ `\\___/ /\\_____\\\\ \\_\\\\ \\_\\ ",
-      \ "     \\/_/\\/_/'\\/__//__/  \\/_/\\/_/    `\\/__/  \\/_____/ \\/_/ \\/_/ ",
-      \ "",
+      \ " _   ___     _____ __  __     ___",
+      \ "| \\ | \\ \\   / /_ _|  \\/  |   / _ \\",
+      \ "|  \\| |\\ \\ / / | || |\\/| |  | | | |",
+      \ "| |\\  | \\ V /  | || |  | |  | |_| |",
+      \ "|_| \\_|  \\_/  |___|_|  |_|___\\___/"
       \  ])
 
   let g:startify_lists =
@@ -445,22 +442,6 @@ autocmd VimEnter,DirChanged * silent! call UpdateTmuxPwd()
       \ {'c': 'AsyncRun CocosCreator'},
       \ ]
 
-
-"   " ===
-"   " Dashboard
-"   " ===
-"   let g:dashboard_custom_header = [
-"         \"  __  __  __      __  __  __      ____                               __      ",
-"         \" /\\ \\/\\ \\/\\ \\  __/\\ \\/\\ \\/\\ \\    /\\  _`\\                            /\\ \\     ",
-"         \" \\ \\ \\_\\ \\ \\ \\/\\ \\ \\ \\ \\ \\_\\ \\   \\ \\ \\L\\ \\    ___      __     _ __  \\_\\ \\    ",
-"         \"  \\ \\  _  \\ \\ \\ \\ \\ \\ \\ \\  _  \\   \\ \\  _ <'  / __`\\  /'__`\\  /\\`'__\\/'_` \\   ",
-"         \"   \\ \\ \\ \\ \\ \\ \\_/ \\_\\ \\ \\ \\ \\ \\   \\ \\ \\L\\ \\/\\ \\L\\ \\/\\ \\L\\.\\_\\ \\ \\//\\ \\L\\ \\  ",
-"         \"    \\ \\_\\ \\_\\ `\\___x___/\\ \\_\\ \\_\\   \\ \\____/\\ \\____/\\ \\__/.\\_\\\\ \\_\\\\ \\___,_\\ ",
-"         \"     \\/_/\\/_/'\\/__//__/  \\/_/\\/_/    \\/___/  \\/___/  \\/__/\\/_/ \\/_/ \\/__,_ / ",
-"         \ ]
-"
-"
-" autocmd FileType dashboard set showtabline=0 | autocmd WinLeave <buffer> set showtabline=2
 
   " ===
   " 代码折叠
