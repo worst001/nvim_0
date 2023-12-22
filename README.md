@@ -503,8 +503,6 @@ gem install neovim
 - [x] 徽章与Logo完善
 
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
 <p align="right">(<a href="#readme-top">返回顶部</a>)</p>
 
 
