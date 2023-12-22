@@ -111,7 +111,6 @@
 
 1. 只要保证 `Neovim` 在 `7.0` 以上，功能还是相对比较全的。
 * [![Neovim][Neovim-pic]][Neovim-url]
-
 2. 所以在安装前先运行 `:checkhealth` 确保`python`、`nodejs`、`ruby`这些环境都在。
 理论上大部分程序环境你都需要装，比如:
 * [![ruby][ruby-pic]][ruby-url]: 提供内置终端界面就是调用`ruby`的`api`实现的
@@ -123,9 +122,9 @@
 * [![lua][lua-pic]][lua-url]: `packer`插件必备 现在很多插件都用lua改写了
 
 3. 此外你的终端环境需要有:
-* [![fzf][fzf-pic]](https://github.com/junegunn/fzf)
-* [![ag][ag-pic]](https://github.com/ggreer/the_silver_searcher)
-* [![rg][rg-pic]](https://github.com/BurntSushi/ripgrep)
+* [![fzf][fzf-pic]][fzf-url]
+* [![ag][ag-pic]][ag-url]
+* [![rg][rg-pic]][rg-url]
 
 4. 可能还需要终端图标字体:
 * [![DroidSansMono Nerd Font][Font-pic]][Font-url]
@@ -578,7 +577,8 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 [license-shield]: https://img.shields.io/github/license/worst001/nvim_0.svg?style=flat-square
 [license-url]: https://github.com/worst001/nvim_0/blob/main/LICENSE.txt
 [Startify-pic]: Startify.png
-[Neovim-pic]]: https://img.shields.io/badge/editor-neovim-green.svg
+
+[Neovim-pic]: https://img.shields.io/badge/editor-neovim-green.svg
 [ruby-pic]: https://img.shields.io/badge/Language-Ruby-red.svg
 [node-pic]: https://img.shields.io/badge/Runtime-Node.js-green.svg
 [python-pic]: https://img.shields.io/badge/Language-Python-blue.svg
@@ -591,3 +591,15 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 [rg-pic]: https://img.shields.io/badge/Tool-ripgrep-green.svg
 [Font-pic]: https://img.shields.io/badge/Font-DroidSansMono%20Nerd%20Font-blue
 
+[Neovim-url]: https://neovim.io
+[ruby-url]: https://www.ruby-lang.org
+[node-url]: https://nodejs.org
+[python-url]: https://www.python.org
+[clang-url]: https://clang.llvm.org
+[golang-url]: https://golang.org
+[java-url]: https://www.oracle.com/java
+[lua-url]: https://www.lua.org
+[fzf-url]: https://github.com/junegunn/fzf
+[ag-url]: https://github.com/ggreer/the_silver_searcher
+[rg-url]: https://github.com/BurntSushi/ripgrep
+[Font-url]: https://www.nerdfonts.com/font-downloads
