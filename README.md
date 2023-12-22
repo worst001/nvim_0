@@ -577,8 +577,6 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 [issues-url]: https://img.shields.io/github/issues/worst001/nvim_0.svg
 [license-shield]: https://img.shields.io/github/license/worst001/nvim_0.svg?style=flat-square
 [license-url]: https://github.com/worst001/nvim_0/blob/main/LICENSE.txt
-
-
 [Startify-pic]: Startify.png
 [Neovim-pic]]:https://img.shields.io/badge/editor-neovim-green.svg
 [ruby-pic]: https://img.shields.io/badge/Language-Ruby-red.svg
