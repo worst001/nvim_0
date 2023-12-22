@@ -566,7 +566,7 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 <!-- links -->
-[your-project-path]:shaojintian/Best_README_template
+[your-project-path]: shaojintian/Best_README_template
 [contributors-shield]: https://img.shields.io/github/contributors/worst001/nvim_0.svg?style=flat-square
 [contributors-url]: https://github.com/worst001/nvim_0/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/worst001/nvim_0.svg?style=flat-square
@@ -578,7 +578,7 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 [license-shield]: https://img.shields.io/github/license/worst001/nvim_0.svg?style=flat-square
 [license-url]: https://github.com/worst001/nvim_0/blob/main/LICENSE.txt
 [Startify-pic]: Startify.png
-[Neovim-pic]]:https://img.shields.io/badge/editor-neovim-green.svg
+[Neovim-pic]]: https://img.shields.io/badge/editor-neovim-green.svg
 [ruby-pic]: https://img.shields.io/badge/Language-Ruby-red.svg
 [node-pic]: https://img.shields.io/badge/Runtime-Node.js-green.svg
 [python-pic]: https://img.shields.io/badge/Language-Python-blue.svg
