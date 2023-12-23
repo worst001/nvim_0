@@ -29,7 +29,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/worst001/nvim_0">
-    <img src="" alt="Logo" width="640" height="360">
+    <img src="img/nvim-logo.png" alt="Logo" width="640" height="360">
   </a>
 
   <h3 align="center">完整 nvim 配置指南</h3>
