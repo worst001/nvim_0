@@ -177,13 +177,16 @@ augroup END
 " nnoremap <silent> <m-r>     :RnvimrToggle<CR>
 
 " ===
-" === chatgpt bot
+" === AI
 " ===
 " nnoremap <silent> <leader>bb   :ChatGPT<CR>
 " nnoremap <silent> <leader>bl   :ChatGPTActAs<CR>
 " nnoremap <silent> <leader>bc   :ChatGPTCompleteCode<CR>
 " nnoremap <silent> <leader>be   :ChatGPTEditWithInstructions<CR>
-
+:imap <C-J> <Plug>(copilot-next)
+:imap <C-K> <Plug>(copilot-previous)
+" :imap <silent><script><expr> <C-L> copilot#Accept("\<CR>")
+" let g:copilot_no_tab_map = v:true
 
 " ===
 " === History 操作
@@ -255,12 +258,12 @@ autocmd FileType dbui nmap <buffer> h <Plug>(DBUI_SelectLine)
 autocmd FileType dbui nmap <buffer> K 10k
 autocmd FileType dbui nmap <buffer> J 10j
 
-:nnoremap <m-1>               :DBUIToggle<cr>
+:nnoremap <m-1>               :DBUIToggle<CR>
 
 
   " Startify
 autocmd User Startified nmap <buffer> l <plug>(startify-open-buffers)
-:noremap stt                   :Startify<CR>
+:noremap stt                  :Startify<CR>
 :noremap sts                  :SSave 
 :noremap stl                  :SLoad 
 :noremap std                  :SDelete 

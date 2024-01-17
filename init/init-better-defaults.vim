@@ -423,7 +423,6 @@
       \ "|_| \\_|  \\_/  |_|  |_|\\___/"
       \ ])
 
-
   let g:startify_lists =
       \ [
       \ { 'type': 'files',     'header': ['   MRU']            },
@@ -637,7 +636,19 @@ endfunction
   let g:vista#renderer#icons = {
   \   "function": "\uf794",
   \   "variable": "\uf71b",
-  \  }
+  \   "class": "\uf0e8",
+  \   "method": "\uf794",
+  \   "property": "\ufab6",
+  \   "constant": "\uf8fe",
+  \   "field": "\ufab5",
+  \   "enum": "\uf435",
+  \   "interface": "\ufa52",
+  \   "namespace": "\ufbac",
+  \   "package": "\ue7b5",
+  \   "module": "\uf40d",
+  \   "map": "\uf11c",
+  \   "augroup": "\uf0c0"
+  \ }
 
   " ===
   " === Fzf
@@ -686,7 +697,7 @@ endfunction
   " ===
   " This is just an example. Keep this out of version control. Check for more examples below.
   let g:dbs = {
-  \  'aaa': 'mysql://root:@localhost:3306/aaa'
+  \  'aaa': 'mysql://root@localhost:3306/aaa'
   \ }
   let g:db_ui_auto_execute_table_helpers = 1
   let g:db_ui_execute_on_save=0
@@ -775,6 +786,12 @@ endfunction
   " ===
   let g:Gitv_OpenHorizontal = 0
 
+  " ===
+  " === AI
+  " ===
+  let g:copilot_filetypes = {
+        \ 'markdown': v:true,
+        \ }
 
   " ===
   " === Better Whitespace

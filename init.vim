@@ -53,8 +53,8 @@
 :syntax on
 
 " Client
-" :let g:python_host_prog  = '/usr/local/bin/python2'
-" :let g:python3_host_prog = '/opt/homebrew/opt/python@3.10/bin/python3.10'
+:let g:python_host_prog  = '/usr/local/bin/python2'
+:let g:python3_host_prog = '/opt/homebrew/opt/python@3.10/bin/python3.10'
 " :let g:ruby_host_prog    = '/opt/homebrew/lib/ruby/gems/3.1.0/bin/neovim-ruby-host'
 
 
@@ -82,8 +82,6 @@ augroup END
 
 " 插件包引入(vim-plug)
 :source $HOME/.vim/init/init-packages.vim
-" Lua插件包引入(packer)
-:source $HOME/.vim/init/init-packer.vim
 " UI 配置(TODO: 必须跟在package后 否则ui配置不生效)
 :source $HOME/.vim/init/init-ui.vim
 " 插件配置
@@ -92,6 +90,8 @@ augroup END
 :source $HOME/.vim/init/init-keybindings.vim
 " 自定义辅助
 :source $HOME/.vim/init/init-assist.vim
+" Lua插件包引入(packer)
+:source $HOME/.vim/init/init-packer.vim
 
 " }}}
 
