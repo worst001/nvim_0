@@ -583,10 +583,6 @@ gem install neovim
 
 [https://openai.com/chatgpt](https://openai.com/chatgpt)
 
-[https://github.com/CompVis/stable-diffusion](https://github.com/CompVis/stable-diffusion)
-
-[https://github.com/AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
-
 <p align="right">(<a href="#readme-top">返回顶部</a>)</p>
 
 
