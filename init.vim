@@ -92,6 +92,8 @@ augroup END
 :source $HOME/.vim/init/init-assist.vim
 " Lua插件包引入(packer)
 :source $HOME/.vim/init/init-packer.vim
+" 自定义Lua插件
+:source $HOME/.vim/lua/init.lua
 
 " }}}
 

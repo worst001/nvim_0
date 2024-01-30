@@ -558,7 +558,7 @@ gem install neovim
 <!-- 联系方式 -->
 ## 联系方式
 
-博客地址: [http://mkdocs.grft.top](http://mkdocs.grft.top)
+博客地址: [http://note.grft.top](http://note.grft.top)
 
 项目链接: [https://github.com/worst001/nvim_0](https://github.com/worst001/nvim_0)
 

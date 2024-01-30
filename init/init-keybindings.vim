@@ -318,6 +318,8 @@ autocmd User Startified nmap <buffer> l <plug>(startify-open-buffers)
 :vmap           <Leader>e   <Plug>(coc-translator-ev)
 :noremap        <leader>tc  :terminal trans<cr>
 :noremap        <leader>te  :terminal trans :en<cr>
+
+
 """ popup
 " nmap <Leader>w <Plug>(coc-translator-p)
 " vmap <Leader>w <Plug>(coc-translator-pv)
